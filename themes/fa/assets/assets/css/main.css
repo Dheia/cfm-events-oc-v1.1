@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css");
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.active-link {
+    text-decoration: underline;
+}
+
+.single-slider{
+    height: 600px;
+    background-size: contain;
+    background-position: center;
+    /* background-color: linear-gradient(90deg, rgba(34,29,108,0.7539390756302521) 0%, rgba(0,212,255,1) 0%, rgba(27,27,207,0.6502976190476191) 0%); */
+    /* display: table; */
+    width: 100%;
+}
+
+.slide-1{
+    background: url(./../banner-1.png) no-repeat;
+}
