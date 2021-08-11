@@ -1,49 +1,36 @@
-1628677739a:1:{s:8:"home.htm";a:9:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:69610:"title = "Home"
+1628684897a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:55959:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[Registration]
+event_id = 1
+title = 1
+gender = 1
+marital_status = 1
+is_partner = 1
+email = 1
+occupation = 1
+location = 0
+address = 1
+church_name = 1
+pastor_name = 1
+spouse = 1
+children = 1
+children_no = 1
+accommodation = 1
+feeding = 1
+transportation = 1
+coming_with_car = 0
+assist_with_car = 0
+arrival_date = 1
+departure_date = 1
+cfc_center = 0
+service_team = 0
+position_held = 0
+attendance_mode = 0
 ==
 
-<!-- Start Header Area -->
-<div class="header-area">
-    <div class="container">
-        <div class="header-wrapper">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div class="site-logo">
-                        <a href="./">
-                            <img src="{{ 'assets/assets/CFM logo.svg' | theme }}" alt="">
-                        </a>
-                        <!-- <h2>BE-ONE</h2>
-                        <a data-toggle="tooltip" title="Be-one" href="index.html"></a> -->
-                    </div>
-                </div>
-                <div class="col-6 d-lg-none static text-right">
-                    <div class="show-mobile-menu"></div>
-                </div>
-                <div class="col-lg-9 text-right d-none d-lg-block">
-                    <nav class="menu-wrapper">
-                        <ul class="main-menu" id="mobile-menu">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#feature">About FA21</a></li>
-                            <li><a href="#portfolio">Testimonials</a></li>
-                            <li><a href="#page">Schedule</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                            <li>
-                                <a type="button" class="btn" data-toggle="modal" data-target="#thankYouModal">Thank You</a></li>
-                            <li class="text-left">
-                                <button class="btn btn-danger" data-toggle="modal"
-                                    data-target="#registerModal">Register</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Header Area -->
-
 <!-- Start Slider Area -->
 <div class="slider-area ">
     <div class="container-fluid p-0">
@@ -60,8 +47,8 @@ is_hidden = 0
                             </div>
                             <a class="btn btn-danger text-center pt-70"
                                 style="height: 60px !important; width: 223px; font-size: 28px !important;"
-                                href="javascript:void(0)" data-toggle="modal"
-                                data-target="#registerModal">Register</a>
+                                href="#"
+                                class="registerBtn">Register</a>
                         </div>
                     </div>
                     <div class="single-slider slider-bg-2 text-center">
@@ -72,8 +59,8 @@ is_hidden = 0
                             </div>
                             <a class="btn search-trigger btn-danger text-center mt-50"
                                 style="height: 60px !important; width: 223px; font-size: 28px !important;"
-                                href="javascript:void(0)" data-toggle="modal"
-                                data-target="#registerModal">Register</a>
+                                href="#"
+                                class="registerBtn">Register</a>
                         </div>
                     </div>
                 </div>
@@ -1008,220 +995,32 @@ is_hidden = 0
             </div>
 
             <div class="modal-body">
-                <form>
-                    <div class="form-row">
-                        <div class="col-lg-6 col-sm-12 col-md-6">
-                            <label for="title">Title</label>
-                            <select id="title" class="form-control form-control-lg">
-                                <option selected></option>
-                                <option value="">Mr</option>
-                                <option value="">Mrs</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-6 col-sm-12 col-md-6">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control form-control-lg">
-                        </div>
-
-                        <div class="col-lg-6 col-sm-12 pt-50">
-                            <label>Gender</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="gender" id="male"
-                                            value="Male" checked>
-                                        <label class="form-check-label ml-2" for="male">
-                                            Male
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="gender" id="female"
-                                            value="Female">
-                                        <label class="form-check-label ml-2" for="female">
-                                            Female
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 pt-50">
-                            <label for="title">Marital Status</label>
-                            <select id="title" class="form-control form-control-lg">
-                                <option selected></option>
-                                <option value="">Single</option>
-                                <option value="">Married</option>
-                                <option value="">Divorced</option>
-                            </select>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label for="title">Location</label>
-                            <select id="title" class="form-control form-control-lg">
-                                <option selected></option>
-                                <option value="">Abuja</option>
-                                <option value="">Abidjan</option>
-                                <option value="">Kaduna</option>
-                            </select>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>ARE YOU A PARTNER?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="partner" id="yes"
-                                            value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="partner" id="no"
-                                            value="No">
-                                        <label class="form-check-label ml-2" for="no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DO YOU REQUIRE ACCOMMODATION
-                                DURING THIS EVENT?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="accomodation"
-                                            id="acor_yes" value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="acor_yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="accomodation"
-                                            id="acor_no" value="No">
-                                        <label class="form-check-label ml-2" for="acor_no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DO YOU REQUIRE FEEDING DURING THIS EVENT?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="feeding" id="feeding_yes"
-                                            value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="feeding_yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="feeding" id="feeding_no"
-                                            value="No">
-                                        <label class="form-check-label ml-2" for="feeding_no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DO YOU REQUIRE TRANSPORTATION DURING THIS EVENT?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="transportation"
-                                            id="transportation_yes" value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="transportation_yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="transportation"
-                                            id="transportation_no" value="No">
-                                        <label class="form-check-label ml-2" for="transportation_no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>WILL YOU BE ATTENDING ONSITE OR ONLINE?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="mode" id="mode_yes"
-                                            value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="mode_yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="mode" id="mode_no"
-                                            value="No">
-                                        <label class="form-check-label ml-2" for="mode_no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DATE OF ARRIVAL?</label>
-                            <input type="date" class="form-control form-control-lg">
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DATE OF DEPARTURE?</label>
-                            <input type="date" class="form-control form-control-lg">
-                        </div>
-                    </div>
-
-                    <div class="text-center pt-100 pb-20">
-                        <input class="btn btn-lg btn-danger text-white register-btn" value="Submit">
-                    </div>
-
-                    <div class="text-center pt-20 pb-50">
-                        <p class="text-muted">Register your kids <a class="theme-color-text" href="#">here</a></p>
-                    </div>
-                </form>
+                loading...
             </div>
         </div>
     </div>
 </div>
+
+
+
+{% put js %}
+<script>
+    $( 'a' ).on('click', function(e) {
+
+      const eventid = $( e.currentTarget ).data('eventid')
+
+      $('form').request('onRegForm', 
+      {
+        success: function(data) {
+          this.success(data).done(function() {
+            $('#registerModal').modal('show')
+          });
+        }
+      })
+
+    })
+</script>
+{% endput %}
 
 <div class="modal pt-100 fade bd-example-modal-xl" tabindex="-1" role="dialog" id="thankYouModal"
     aria-labelledby="thankYouModal" aria-hidden="true">
@@ -1242,48 +1041,7 @@ is_hidden = 0
             </div>
         </div>
     </div>
-</div>
-";s:5:"mtime";i:1628677071;s:6:"markup";s:69540:"<!-- Start Header Area -->
-<div class="header-area">
-    <div class="container">
-        <div class="header-wrapper">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div class="site-logo">
-                        <a href="./">
-                            <img src="{{ 'assets/assets/CFM logo.svg' | theme }}" alt="">
-                        </a>
-                        <!-- <h2>BE-ONE</h2>
-                        <a data-toggle="tooltip" title="Be-one" href="index.html"></a> -->
-                    </div>
-                </div>
-                <div class="col-6 d-lg-none static text-right">
-                    <div class="show-mobile-menu"></div>
-                </div>
-                <div class="col-lg-9 text-right d-none d-lg-block">
-                    <nav class="menu-wrapper">
-                        <ul class="main-menu" id="mobile-menu">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#feature">About FA21</a></li>
-                            <li><a href="#portfolio">Testimonials</a></li>
-                            <li><a href="#page">Schedule</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                            <li>
-                                <a type="button" class="btn" data-toggle="modal" data-target="#thankYouModal">Thank You</a></li>
-                            <li class="text-left">
-                                <button class="btn btn-danger" data-toggle="modal"
-                                    data-target="#registerModal">Register</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Header Area -->
-
-<!-- Start Slider Area -->
+</div>";s:5:"mtime";i:1628684293;s:6:"markup";s:55463:"<!-- Start Slider Area -->
 <div class="slider-area ">
     <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -1299,8 +1057,8 @@ is_hidden = 0
                             </div>
                             <a class="btn btn-danger text-center pt-70"
                                 style="height: 60px !important; width: 223px; font-size: 28px !important;"
-                                href="javascript:void(0)" data-toggle="modal"
-                                data-target="#registerModal">Register</a>
+                                href="#"
+                                class="registerBtn">Register</a>
                         </div>
                     </div>
                     <div class="single-slider slider-bg-2 text-center">
@@ -1311,8 +1069,8 @@ is_hidden = 0
                             </div>
                             <a class="btn search-trigger btn-danger text-center mt-50"
                                 style="height: 60px !important; width: 223px; font-size: 28px !important;"
-                                href="javascript:void(0)" data-toggle="modal"
-                                data-target="#registerModal">Register</a>
+                                href="#"
+                                class="registerBtn">Register</a>
                         </div>
                     </div>
                 </div>
@@ -2247,220 +2005,32 @@ is_hidden = 0
             </div>
 
             <div class="modal-body">
-                <form>
-                    <div class="form-row">
-                        <div class="col-lg-6 col-sm-12 col-md-6">
-                            <label for="title">Title</label>
-                            <select id="title" class="form-control form-control-lg">
-                                <option selected></option>
-                                <option value="">Mr</option>
-                                <option value="">Mrs</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-6 col-sm-12 col-md-6">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control form-control-lg">
-                        </div>
-
-                        <div class="col-lg-6 col-sm-12 pt-50">
-                            <label>Gender</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="gender" id="male"
-                                            value="Male" checked>
-                                        <label class="form-check-label ml-2" for="male">
-                                            Male
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="gender" id="female"
-                                            value="Female">
-                                        <label class="form-check-label ml-2" for="female">
-                                            Female
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 pt-50">
-                            <label for="title">Marital Status</label>
-                            <select id="title" class="form-control form-control-lg">
-                                <option selected></option>
-                                <option value="">Single</option>
-                                <option value="">Married</option>
-                                <option value="">Divorced</option>
-                            </select>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label for="title">Location</label>
-                            <select id="title" class="form-control form-control-lg">
-                                <option selected></option>
-                                <option value="">Abuja</option>
-                                <option value="">Abidjan</option>
-                                <option value="">Kaduna</option>
-                            </select>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>ARE YOU A PARTNER?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="partner" id="yes"
-                                            value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="partner" id="no"
-                                            value="No">
-                                        <label class="form-check-label ml-2" for="no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DO YOU REQUIRE ACCOMMODATION
-                                DURING THIS EVENT?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="accomodation"
-                                            id="acor_yes" value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="acor_yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="accomodation"
-                                            id="acor_no" value="No">
-                                        <label class="form-check-label ml-2" for="acor_no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DO YOU REQUIRE FEEDING DURING THIS EVENT?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="feeding" id="feeding_yes"
-                                            value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="feeding_yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="feeding" id="feeding_no"
-                                            value="No">
-                                        <label class="form-check-label ml-2" for="feeding_no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DO YOU REQUIRE TRANSPORTATION DURING THIS EVENT?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="transportation"
-                                            id="transportation_yes" value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="transportation_yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="transportation"
-                                            id="transportation_no" value="No">
-                                        <label class="form-check-label ml-2" for="transportation_no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>WILL YOU BE ATTENDING ONSITE OR ONLINE?</label>
-                            <div class="d-flex">
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="mode" id="mode_yes"
-                                            value="Yes" checked>
-                                        <label class="form-check-label ml-2" for="mode_yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="form-check checkbox form-check-inline d-flex justify-content-center border text-center">
-                                        <input class="form-check-input" type="radio" name="mode" id="mode_no"
-                                            value="No">
-                                        <label class="form-check-label ml-2" for="mode_no">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DATE OF ARRIVAL?</label>
-                            <input type="date" class="form-control form-control-lg">
-                        </div>
-
-                        <div class="col-lg-6 pt-50">
-                            <label>DATE OF DEPARTURE?</label>
-                            <input type="date" class="form-control form-control-lg">
-                        </div>
-                    </div>
-
-                    <div class="text-center pt-100 pb-20">
-                        <input class="btn btn-lg btn-danger text-white register-btn" value="Submit">
-                    </div>
-
-                    <div class="text-center pt-20 pb-50">
-                        <p class="text-muted">Register your kids <a class="theme-color-text" href="#">here</a></p>
-                    </div>
-                </form>
+                loading...
             </div>
         </div>
     </div>
 </div>
+
+
+
+{% put js %}
+<script>
+    $( 'a' ).on('click', function(e) {
+
+      const eventid = $( e.currentTarget ).data('eventid')
+
+      $('form').request('onRegForm', 
+      {
+        success: function(data) {
+          this.success(data).done(function() {
+            $('#registerModal').modal('show')
+          });
+        }
+      })
+
+    })
+</script>
+{% endput %}
 
 <div class="modal pt-100 fade bd-example-modal-xl" tabindex="-1" role="dialog" id="thankYouModal"
     aria-labelledby="thankYouModal" aria-hidden="true">
@@ -2481,4 +2051,4 @@ is_hidden = 0
             </div>
         </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+</div>";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:12:"Registration";a:25:{s:8:"event_id";s:1:"1";s:5:"title";s:1:"1";s:6:"gender";s:1:"1";s:14:"marital_status";s:1:"1";s:10:"is_partner";s:1:"1";s:5:"email";s:1:"1";s:10:"occupation";s:1:"1";s:8:"location";s:1:"0";s:7:"address";s:1:"1";s:11:"church_name";s:1:"1";s:11:"pastor_name";s:1:"1";s:6:"spouse";s:1:"1";s:8:"children";s:1:"1";s:11:"children_no";s:1:"1";s:13:"accommodation";s:1:"1";s:7:"feeding";s:1:"1";s:14:"transportation";s:1:"1";s:15:"coming_with_car";s:1:"0";s:15:"assist_with_car";s:1:"0";s:12:"arrival_date";s:1:"1";s:14:"departure_date";s:1:"1";s:10:"cfc_center";s:1:"0";s:12:"service_team";s:1:"0";s:13:"position_held";s:1:"0";s:15:"attendance_mode";s:1:"0";}}}

@@ -316,4 +316,12 @@ class Registration extends ComponentBase
     public function onRender() {
         $this->page['centres'] = CentreModel::all();
     }
+
+    public function onRegForm() {
+         
+          return ['.modal-body' => $this->renderPartial('@default.htm', [
+               'centers' => CentreModel::all()
+          ])];
+
+    }
 }

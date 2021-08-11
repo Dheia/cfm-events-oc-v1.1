@@ -36,50 +36,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
     {
         $macros = $this->macros;
         // line 1
-        echo "<!-- Start Header Area -->
-<div class=\"header-area\">
-    <div class=\"container\">
-        <div class=\"header-wrapper\">
-            <div class=\"row\">
-                <div class=\"col-lg-3 col-6\">
-                    <div class=\"site-logo\">
-                        <a href=\"./\">
-                            <img src=\"";
-        // line 9
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/CFM logo.svg");
-        echo "\" alt=\"\">
-                        </a>
-                        <!-- <h2>BE-ONE</h2>
-                        <a data-toggle=\"tooltip\" title=\"Be-one\" href=\"index.html\"></a> -->
-                    </div>
-                </div>
-                <div class=\"col-6 d-lg-none static text-right\">
-                    <div class=\"show-mobile-menu\"></div>
-                </div>
-                <div class=\"col-lg-9 text-right d-none d-lg-block\">
-                    <nav class=\"menu-wrapper\">
-                        <ul class=\"main-menu\" id=\"mobile-menu\">
-                            <li class=\"active\"><a href=\"#\">Home</a></li>
-                            <li><a href=\"#feature\">About FA21</a></li>
-                            <li><a href=\"#portfolio\">Testimonials</a></li>
-                            <li><a href=\"#page\">Schedule</a></li>
-                            <li><a href=\"#faq\">FAQ</a></li>
-                            <li>
-                                <a type=\"button\" class=\"btn\" data-toggle=\"modal\" data-target=\"#thankYouModal\">Thank You</a></li>
-                            <li class=\"text-left\">
-                                <button class=\"btn btn-danger\" data-toggle=\"modal\"
-                                    data-target=\"#registerModal\">Register</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Header Area -->
-
-<!-- Start Slider Area -->
+        echo "<!-- Start Slider Area -->
 <div class=\"slider-area \">
     <div class=\"container-fluid p-0\">
         <div class=\"row no-gutters\">
@@ -95,23 +52,23 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                             </div>
                             <a class=\"btn btn-danger text-center pt-70\"
                                 style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
-                                href=\"javascript:void(0)\" data-toggle=\"modal\"
-                                data-target=\"#registerModal\">Register</a>
+                                href=\"#\"
+                                class=\"registerBtn\">Register</a>
                         </div>
                     </div>
                     <div class=\"single-slider slider-bg-2 text-center\">
                         <div class=\"slider-inner\">
                             <div>
                                 <img src=\"";
-        // line 64
+        // line 24
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/event.svg");
         echo "\" class=\"img-responsive\" width=\"300px\"
                                     height=\"200px\" alt=\"\">
                             </div>
                             <a class=\"btn search-trigger btn-danger text-center mt-50\"
                                 style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
-                                href=\"javascript:void(0)\" data-toggle=\"modal\"
-                                data-target=\"#registerModal\">Register</a>
+                                href=\"#\"
+                                class=\"registerBtn\">Register</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +104,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                 </div>
                 <div class=\"col-lg-5\">
                     <img src=\"";
-        // line 105
+        // line 65
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/hero images.png");
         echo "\" class=\"img-responsive w-100\" alt=\"\">
                 </div>
@@ -180,7 +137,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                                     <div class=\"\">
                                         <div class=\"p-3\">
                                             <img src=\"";
-        // line 135
+        // line 95
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/word.png");
         echo "\"
                                                 class=\"img-responsive features-img rounded-circle\" alt=\"\">
@@ -213,7 +170,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                                     <div class=\"\">
                                         <div class=\"p-3\">
                                             <img src=\"";
-        // line 165
+        // line 125
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/worship.png");
         echo "\"
                                                 class=\"img-responsive features-img rounded-circle\" alt=\"\">
@@ -248,7 +205,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                                     <div class=\"\">
                                         <div class=\"p-3\">
                                             <img src=\"";
-        // line 197
+        // line 157
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/fellowship.png");
         echo "\"
                                                 class=\"img-responsive features-img rounded-circle\" alt=\"\">
@@ -280,7 +237,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                                     <div class=\"\">
                                         <div class=\"p-3\">
                                             <img src=\"";
-        // line 226
+        // line 186
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/healing_miracle.png");
         echo "\"
                                                 class=\"img-responsive features-img rounded-circle\" alt=\"\">
@@ -315,7 +272,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                                     <div class=\"\">
                                         <div class=\"p-3\">
                                             <img src=\"";
-        // line 258
+        // line 218
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/the_sound.png");
         echo "\"
                                                 class=\"img-responsive features-img rounded-circle\" alt=\"\">
@@ -346,7 +303,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                                 <div class=\"features-card-flex\">
                                     <div class=\"p-3\">
                                         <img src=\"";
-        // line 286
+        // line 246
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/strategy.png");
         echo "\"
                                             class=\"img-responsive features-img rounded-circle\" alt=\"\">
@@ -376,7 +333,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                                 <div class=\"features-card-flex\">
                                     <div class=\"p-3\">
                                         <img src=\"";
-        // line 313
+        // line 273
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/strategy.png");
         echo "\"
                                             class=\"img-responsive features-img rounded-circle\" alt=\"\">
@@ -408,7 +365,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                             <div class=\"ministers-card\">
                                 <div class=\"ministers-icon text-center\">
                                     <img src=\"";
-        // line 342
+        // line 302
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/Ellipse 22.svg");
         echo "\" class=\"img-responsive ministers-image\"
                                         alt=\"\">
@@ -420,7 +377,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                             <div class=\"ministers-card\">
                                 <div class=\"ministers-icon text-center\">
                                     <img src=\"";
-        // line 351
+        // line 311
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/Ellipse 22.svg");
         echo "\" class=\"img-responsive ministers-image\"
                                         alt=\"\">
@@ -434,7 +391,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                             <div class=\"ministers-card\">
                                 <div class=\"ministers-icon text-center\">
                                     <img src=\"";
-        // line 362
+        // line 322
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/Ellipse 22.svg");
         echo "\" class=\"img-responsive ministers-image\"
                                         alt=\"\">
@@ -446,7 +403,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                             <div class=\"ministers-card\">
                                 <div class=\"ministers-icon text-center\">
                                     <img src=\"";
-        // line 371
+        // line 331
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/Ellipse 22.svg");
         echo "\" class=\"img-responsive ministers-image\"
                                         alt=\"\">
@@ -460,7 +417,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                             <div class=\"ministers-card\">
                                 <div class=\"ministers-icon text-center\">
                                     <img src=\"";
-        // line 382
+        // line 342
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/Ellipse 22.svg");
         echo "\" class=\"img-responsive ministers-image\"
                                         alt=\"\">
@@ -472,7 +429,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                             <div class=\"ministers-card\">
                                 <div class=\"ministers-icon text-center\">
                                     <img src=\"";
-        // line 391
+        // line 351
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/Ellipse 22.svg");
         echo "\" class=\"img-responsive ministers-image\"
                                         alt=\"\">
@@ -494,7 +451,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
         <div class=\"testimonial-container mx-auto\">
             <div class=\"testimonial-bg-blue\">
                 <img src=\"";
-        // line 410
+        // line 370
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/quote-left.svg");
         echo "\" class=\"img-responsive testimonial_quote_icon left\" alt=\"\">
                 <div class=\"testimonial-top-group\">
@@ -502,7 +459,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                     <p class=\"testimonial-bg-text text-white\">What previous attendees have experienced</p>
                 </div>
                 <img src=\"";
-        // line 415
+        // line 375
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/quote-right.svg");
         echo "\" class=\"img-responsive testimonial_quote_icon right\"
                     alt=\"\">
@@ -1043,7 +1000,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             <div class=\"brand-item\">
                 <div class=\"brand-item-inner\">
                     <a href=\"#\"><img src=\"";
-        // line 953
+        // line 913
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/img/brands/1.png");
         echo "\" alt=\"\"></a>
                 </div>
@@ -1051,7 +1008,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             <div class=\"brand-item\">
                 <div class=\"brand-item-inner\">
                     <a href=\"#\"><img src=\"";
-        // line 958
+        // line 918
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/img/brands/2.png");
         echo "\" alt=\"\"></a>
                 </div>
@@ -1059,7 +1016,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             <div class=\"brand-item\">
                 <div class=\"brand-item-inner\">
                     <a href=\"#\"><img src=\"";
-        // line 963
+        // line 923
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/img/brands/3.png");
         echo "\" alt=\"\"></a>
                 </div>
@@ -1067,7 +1024,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             <div class=\"brand-item\">
                 <div class=\"brand-item-inner\">
                     <a href=\"#\"><img src=\"";
-        // line 968
+        // line 928
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/img/brands/4.png");
         echo "\" alt=\"\"></a>
                 </div>
@@ -1075,7 +1032,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             <div class=\"brand-item\">
                 <div class=\"brand-item-inner\">
                     <a href=\"#\"><img src=\"";
-        // line 973
+        // line 933
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/img/brands/5.png");
         echo "\" alt=\"\"></a>
                 </div>
@@ -1083,7 +1040,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             <div class=\"brand-item\">
                 <div class=\"brand-item-inner\">
                     <a href=\"#\"><img src=\"";
-        // line 978
+        // line 938
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/img/brands/6.png");
         echo "\" alt=\"\"></a>
                 </div>
@@ -1103,7 +1060,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
         <div class=\"modal-content\">
             <div class=\"text-center modal-icon\">
                 <img src=\"";
-        // line 995
+        // line 955
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/fa_reg_top.svg");
         echo "\" class=\"img-responsive\" alt=\"\">
             </div>
@@ -1115,221 +1072,39 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             </div>
 
             <div class=\"modal-body\">
-                <form>
-                    <div class=\"form-row\">
-                        <div class=\"col-lg-6 col-sm-12 col-md-6\">
-                            <label for=\"title\">Title</label>
-                            <select id=\"title\" class=\"form-control form-control-lg\">
-                                <option selected></option>
-                                <option value=\"\">Mr</option>
-                                <option value=\"\">Mrs</option>
-                            </select>
-                        </div>
-                        <div class=\"col-lg-6 col-sm-12 col-md-6\">
-                            <label for=\"name\">Name</label>
-                            <input type=\"text\" class=\"form-control form-control-lg\">
-                        </div>
-
-                        <div class=\"col-lg-6 col-sm-12 pt-50\">
-                            <label>Gender</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"gender\" id=\"male\"
-                                            value=\"Male\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"male\">
-                                            Male
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"gender\" id=\"female\"
-                                            value=\"Female\">
-                                        <label class=\"form-check-label ml-2\" for=\"female\">
-                                            Female
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=\"col-lg-6 pt-50\">
-                            <label for=\"title\">Marital Status</label>
-                            <select id=\"title\" class=\"form-control form-control-lg\">
-                                <option selected></option>
-                                <option value=\"\">Single</option>
-                                <option value=\"\">Married</option>
-                                <option value=\"\">Divorced</option>
-                            </select>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label for=\"title\">Location</label>
-                            <select id=\"title\" class=\"form-control form-control-lg\">
-                                <option selected></option>
-                                <option value=\"\">Abuja</option>
-                                <option value=\"\">Abidjan</option>
-                                <option value=\"\">Kaduna</option>
-                            </select>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>ARE YOU A PARTNER?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"partner\" id=\"yes\"
-                                            value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"partner\" id=\"no\"
-                                            value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DO YOU REQUIRE ACCOMMODATION
-                                DURING THIS EVENT?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"accomodation\"
-                                            id=\"acor_yes\" value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"acor_yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"accomodation\"
-                                            id=\"acor_no\" value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"acor_no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DO YOU REQUIRE FEEDING DURING THIS EVENT?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"feeding\" id=\"feeding_yes\"
-                                            value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"feeding_yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"feeding\" id=\"feeding_no\"
-                                            value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"feeding_no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DO YOU REQUIRE TRANSPORTATION DURING THIS EVENT?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"transportation\"
-                                            id=\"transportation_yes\" value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"transportation_yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"transportation\"
-                                            id=\"transportation_no\" value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"transportation_no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>WILL YOU BE ATTENDING ONSITE OR ONLINE?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"mode\" id=\"mode_yes\"
-                                            value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"mode_yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"mode\" id=\"mode_no\"
-                                            value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"mode_no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DATE OF ARRIVAL?</label>
-                            <input type=\"date\" class=\"form-control form-control-lg\">
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DATE OF DEPARTURE?</label>
-                            <input type=\"date\" class=\"form-control form-control-lg\">
-                        </div>
-                    </div>
-
-                    <div class=\"text-center pt-100 pb-20\">
-                        <input class=\"btn btn-lg btn-danger text-white register-btn\" value=\"Submit\">
-                    </div>
-
-                    <div class=\"text-center pt-20 pb-50\">
-                        <p class=\"text-muted\">Register your kids <a class=\"theme-color-text\" href=\"#\">here</a></p>
-                    </div>
-                </form>
+                loading...
             </div>
         </div>
     </div>
 </div>
 
+
+
+";
+        // line 973
+        echo $this->env->getExtension('Cms\Twig\Extension')->startBlock('js'        );
+        // line 974
+        echo "<script>
+    \$( 'a' ).on('click', function(e) {
+
+      const eventid = \$( e.currentTarget ).data('eventid')
+
+      \$('form').request('onRegForm', 
+      {
+        success: function(data) {
+          this.success(data).done(function() {
+            \$('#registerModal').modal('show')
+          });
+        }
+      })
+
+    })
+</script>
+";
+        // line 973
+        echo $this->env->getExtension('Cms\Twig\Extension')->endBlock(true        );
+        // line 991
+        echo "
 <div class=\"modal pt-100 fade bd-example-modal-xl\" tabindex=\"-1\" role=\"dialog\" id=\"thankYouModal\"
     aria-labelledby=\"thankYouModal\" aria-hidden=\"true\">
     <div class=\"modal-dialog modal-xl\">
@@ -1345,7 +1120,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             <div class=\"modal-body\">
                 <div class=\"text-center\">
                     <img src=\"";
-        // line 1234
+        // line 1006
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/assets/thank_you.svg");
         echo "\" class=\"img-responsive w-50 h-50\" alt=\"\">
                 </div>
@@ -1367,52 +1142,12 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
 
     public function getDebugInfo()
     {
-        return array (  1349 => 1234,  1107 => 995,  1087 => 978,  1079 => 973,  1071 => 968,  1063 => 963,  1055 => 958,  1047 => 953,  506 => 415,  498 => 410,  476 => 391,  464 => 382,  450 => 371,  438 => 362,  424 => 351,  412 => 342,  380 => 313,  350 => 286,  319 => 258,  284 => 226,  252 => 197,  217 => 165,  184 => 135,  151 => 105,  107 => 64,  49 => 9,  39 => 1,);
+        return array (  1124 => 1006,  1107 => 991,  1105 => 973,  1087 => 974,  1085 => 973,  1064 => 955,  1044 => 938,  1036 => 933,  1028 => 928,  1020 => 923,  1012 => 918,  1004 => 913,  463 => 375,  455 => 370,  433 => 351,  421 => 342,  407 => 331,  395 => 322,  381 => 311,  369 => 302,  337 => 273,  307 => 246,  276 => 218,  241 => 186,  209 => 157,  174 => 125,  141 => 95,  108 => 65,  64 => 24,  39 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!-- Start Header Area -->
-<div class=\"header-area\">
-    <div class=\"container\">
-        <div class=\"header-wrapper\">
-            <div class=\"row\">
-                <div class=\"col-lg-3 col-6\">
-                    <div class=\"site-logo\">
-                        <a href=\"./\">
-                            <img src=\"{{ 'assets/assets/CFM logo.svg' | theme }}\" alt=\"\">
-                        </a>
-                        <!-- <h2>BE-ONE</h2>
-                        <a data-toggle=\"tooltip\" title=\"Be-one\" href=\"index.html\"></a> -->
-                    </div>
-                </div>
-                <div class=\"col-6 d-lg-none static text-right\">
-                    <div class=\"show-mobile-menu\"></div>
-                </div>
-                <div class=\"col-lg-9 text-right d-none d-lg-block\">
-                    <nav class=\"menu-wrapper\">
-                        <ul class=\"main-menu\" id=\"mobile-menu\">
-                            <li class=\"active\"><a href=\"#\">Home</a></li>
-                            <li><a href=\"#feature\">About FA21</a></li>
-                            <li><a href=\"#portfolio\">Testimonials</a></li>
-                            <li><a href=\"#page\">Schedule</a></li>
-                            <li><a href=\"#faq\">FAQ</a></li>
-                            <li>
-                                <a type=\"button\" class=\"btn\" data-toggle=\"modal\" data-target=\"#thankYouModal\">Thank You</a></li>
-                            <li class=\"text-left\">
-                                <button class=\"btn btn-danger\" data-toggle=\"modal\"
-                                    data-target=\"#registerModal\">Register</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Header Area -->
-
-<!-- Start Slider Area -->
+        return new Source("<!-- Start Slider Area -->
 <div class=\"slider-area \">
     <div class=\"container-fluid p-0\">
         <div class=\"row no-gutters\">
@@ -1428,8 +1163,8 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                             </div>
                             <a class=\"btn btn-danger text-center pt-70\"
                                 style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
-                                href=\"javascript:void(0)\" data-toggle=\"modal\"
-                                data-target=\"#registerModal\">Register</a>
+                                href=\"#\"
+                                class=\"registerBtn\">Register</a>
                         </div>
                     </div>
                     <div class=\"single-slider slider-bg-2 text-center\">
@@ -1440,8 +1175,8 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
                             </div>
                             <a class=\"btn search-trigger btn-danger text-center mt-50\"
                                 style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
-                                href=\"javascript:void(0)\" data-toggle=\"modal\"
-                                data-target=\"#registerModal\">Register</a>
+                                href=\"#\"
+                                class=\"registerBtn\">Register</a>
                         </div>
                     </div>
                 </div>
@@ -2376,220 +2111,32 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             </div>
 
             <div class=\"modal-body\">
-                <form>
-                    <div class=\"form-row\">
-                        <div class=\"col-lg-6 col-sm-12 col-md-6\">
-                            <label for=\"title\">Title</label>
-                            <select id=\"title\" class=\"form-control form-control-lg\">
-                                <option selected></option>
-                                <option value=\"\">Mr</option>
-                                <option value=\"\">Mrs</option>
-                            </select>
-                        </div>
-                        <div class=\"col-lg-6 col-sm-12 col-md-6\">
-                            <label for=\"name\">Name</label>
-                            <input type=\"text\" class=\"form-control form-control-lg\">
-                        </div>
-
-                        <div class=\"col-lg-6 col-sm-12 pt-50\">
-                            <label>Gender</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"gender\" id=\"male\"
-                                            value=\"Male\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"male\">
-                                            Male
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"gender\" id=\"female\"
-                                            value=\"Female\">
-                                        <label class=\"form-check-label ml-2\" for=\"female\">
-                                            Female
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=\"col-lg-6 pt-50\">
-                            <label for=\"title\">Marital Status</label>
-                            <select id=\"title\" class=\"form-control form-control-lg\">
-                                <option selected></option>
-                                <option value=\"\">Single</option>
-                                <option value=\"\">Married</option>
-                                <option value=\"\">Divorced</option>
-                            </select>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label for=\"title\">Location</label>
-                            <select id=\"title\" class=\"form-control form-control-lg\">
-                                <option selected></option>
-                                <option value=\"\">Abuja</option>
-                                <option value=\"\">Abidjan</option>
-                                <option value=\"\">Kaduna</option>
-                            </select>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>ARE YOU A PARTNER?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"partner\" id=\"yes\"
-                                            value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"partner\" id=\"no\"
-                                            value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DO YOU REQUIRE ACCOMMODATION
-                                DURING THIS EVENT?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"accomodation\"
-                                            id=\"acor_yes\" value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"acor_yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"accomodation\"
-                                            id=\"acor_no\" value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"acor_no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DO YOU REQUIRE FEEDING DURING THIS EVENT?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"feeding\" id=\"feeding_yes\"
-                                            value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"feeding_yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"feeding\" id=\"feeding_no\"
-                                            value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"feeding_no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DO YOU REQUIRE TRANSPORTATION DURING THIS EVENT?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"transportation\"
-                                            id=\"transportation_yes\" value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"transportation_yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"transportation\"
-                                            id=\"transportation_no\" value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"transportation_no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>WILL YOU BE ATTENDING ONSITE OR ONLINE?</label>
-                            <div class=\"d-flex\">
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"mode\" id=\"mode_yes\"
-                                            value=\"Yes\" checked>
-                                        <label class=\"form-check-label ml-2\" for=\"mode_yes\">
-                                            Yes
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class=\"\">
-                                    <div
-                                        class=\"form-check checkbox form-check-inline d-flex justify-content-center border text-center\">
-                                        <input class=\"form-check-input\" type=\"radio\" name=\"mode\" id=\"mode_no\"
-                                            value=\"No\">
-                                        <label class=\"form-check-label ml-2\" for=\"mode_no\">
-                                            No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DATE OF ARRIVAL?</label>
-                            <input type=\"date\" class=\"form-control form-control-lg\">
-                        </div>
-
-                        <div class=\"col-lg-6 pt-50\">
-                            <label>DATE OF DEPARTURE?</label>
-                            <input type=\"date\" class=\"form-control form-control-lg\">
-                        </div>
-                    </div>
-
-                    <div class=\"text-center pt-100 pb-20\">
-                        <input class=\"btn btn-lg btn-danger text-white register-btn\" value=\"Submit\">
-                    </div>
-
-                    <div class=\"text-center pt-20 pb-50\">
-                        <p class=\"text-muted\">Register your kids <a class=\"theme-color-text\" href=\"#\">here</a></p>
-                    </div>
-                </form>
+                loading...
             </div>
         </div>
     </div>
 </div>
+
+
+
+{% put js %}
+<script>
+    \$( 'a' ).on('click', function(e) {
+
+      const eventid = \$( e.currentTarget ).data('eventid')
+
+      \$('form').request('onRegForm', 
+      {
+        success: function(data) {
+          this.success(data).done(function() {
+            \$('#registerModal').modal('show')
+          });
+        }
+      })
+
+    })
+</script>
+{% endput %}
 
 <div class=\"modal pt-100 fade bd-example-modal-xl\" tabindex=\"-1\" role=\"dialog\" id=\"thankYouModal\"
     aria-labelledby=\"thankYouModal\" aria-hidden=\"true\">
@@ -2615,13 +2162,13 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
     
     public function checkSecurity()
     {
-        static $tags = array();
-        static $filters = array("theme" => 9);
+        static $tags = array("put" => 973);
+        static $filters = array("theme" => 24);
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                [],
+                ['put'],
                 ['theme'],
                 []
             );

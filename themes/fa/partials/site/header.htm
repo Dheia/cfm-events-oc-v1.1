@@ -1,22 +1,39 @@
-<!-- Nav -->
-<nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
+
+<!-- Start Header Area -->
+<div class="header-area">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ 'home'|page }}">October Demo</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="separator hidden-xs"></li>
-                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>
-                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
-                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
-            </ul>
+        <div class="header-wrapper">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div class="site-logo">
+                        <a href="./">
+                            <img src="{{ 'assets/assets/CFM logo.svg' | theme }}" alt="">
+                        </a>
+                        <!-- <h2>BE-ONE</h2>
+                        <a data-toggle="tooltip" title="Be-one" href="index.html"></a> -->
+                    </div>
+                </div>
+                <div class="col-6 d-lg-none static text-right">
+                    <div class="show-mobile-menu"></div>
+                </div>
+                <div class="col-lg-9 text-right d-none d-lg-block">
+                    <nav class="menu-wrapper">
+                        <ul class="main-menu" id="mobile-menu">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#feature">About FA21</a></li>
+                            <li><a href="#portfolio">Testimonials</a></li>
+                            <li><a href="#page">Schedule</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li>
+                                <a type="button" class="btn" data-toggle="modal" data-target="#thankYouModal">Thank You</a></li>
+                            <li class="text-left">
+                                <button class="btn btn-danger" class="registerBtn">Register</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+</div>
+<!-- End Header Area -->

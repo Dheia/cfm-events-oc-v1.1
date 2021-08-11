@@ -1,17 +1,16 @@
-1628678090a:1:{s:11:"plugins.htm";a:10:{s:8:"fileName";s:11:"plugins.htm";s:7:"content";s:528:"title = "Test"
+1628684558a:1:{s:11:"plugins.htm";a:10:{s:8:"fileName";s:11:"plugins.htm";s:7:"content";s:514:"title = "Test"
 url = "/test"
 layout = "default"
 is_hidden = 0
 
 [Registration]
-event_id = 1
 title = 1
 gender = 1
 marital_status = 1
 is_partner = 1
 email = 1
 occupation = 1
-location = 0
+location = 1
 address = 1
 church_name = 1
 pastor_name = 1
@@ -21,13 +20,13 @@ children_no = 1
 accommodation = 1
 feeding = 1
 transportation = 1
-coming_with_car = 0
-assist_with_car = 0
+coming_with_car = 1
+assist_with_car = 1
 arrival_date = 1
 departure_date = 1
-cfc_center = 0
-service_team = 0
-position_held = 0
-attendance_mode = 0
+cfc_center = 1
+service_team = 1
+position_held = 1
+attendance_mode = 1
 ==
-{% component 'Registration' %}";s:5:"mtime";i:1628676811;s:6:"markup";s:30:"{% component 'Registration' %}";s:4:"code";N;s:5:"title";s:4:"Test";s:3:"url";s:5:"/test";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:12:"Registration";a:25:{s:8:"event_id";s:1:"1";s:5:"title";s:1:"1";s:6:"gender";s:1:"1";s:14:"marital_status";s:1:"1";s:10:"is_partner";s:1:"1";s:5:"email";s:1:"1";s:10:"occupation";s:1:"1";s:8:"location";s:1:"0";s:7:"address";s:1:"1";s:11:"church_name";s:1:"1";s:11:"pastor_name";s:1:"1";s:6:"spouse";s:1:"1";s:8:"children";s:1:"1";s:11:"children_no";s:1:"1";s:13:"accommodation";s:1:"1";s:7:"feeding";s:1:"1";s:14:"transportation";s:1:"1";s:15:"coming_with_car";s:1:"0";s:15:"assist_with_car";s:1:"0";s:12:"arrival_date";s:1:"1";s:14:"departure_date";s:1:"1";s:10:"cfc_center";s:1:"0";s:12:"service_team";s:1:"0";s:13:"position_held";s:1:"0";s:15:"attendance_mode";s:1:"0";}}}
+{% component 'Registration' %}";s:5:"mtime";i:1628680238;s:6:"markup";s:30:"{% component 'Registration' %}";s:4:"code";N;s:5:"title";s:4:"Test";s:3:"url";s:5:"/test";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:12:"Registration";a:24:{s:5:"title";s:1:"1";s:6:"gender";s:1:"1";s:14:"marital_status";s:1:"1";s:10:"is_partner";s:1:"1";s:5:"email";s:1:"1";s:10:"occupation";s:1:"1";s:8:"location";s:1:"1";s:7:"address";s:1:"1";s:11:"church_name";s:1:"1";s:11:"pastor_name";s:1:"1";s:6:"spouse";s:1:"1";s:8:"children";s:1:"1";s:11:"children_no";s:1:"1";s:13:"accommodation";s:1:"1";s:7:"feeding";s:1:"1";s:14:"transportation";s:1:"1";s:15:"coming_with_car";s:1:"1";s:15:"assist_with_car";s:1:"1";s:12:"arrival_date";s:1:"1";s:14:"departure_date";s:1:"1";s:10:"cfc_center";s:1:"1";s:12:"service_team";s:1:"1";s:13:"position_held";s:1:"1";s:15:"attendance_mode";s:1:"1";}}}

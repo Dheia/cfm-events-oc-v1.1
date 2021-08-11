@@ -41,20 +41,19 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
 <head>
     <meta charset=\"utf-8\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-    <meta name=\"description\"
-        content=\"Be-one is a clean HTML5/CSS3 template suitable for Business, Corporate, Taxes, Broker, Ad...\">
+    <meta name=\"description\" content=\"Faith Adventure 2021\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
 
 
     <!-- Title -->
-    <title>FA'21 - ";
-        // line 12
-        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 12), "title", [], "any", false, false, true, 12), 12, $this->source), "html", null, true);
+    <title>FA 21 - ";
+        // line 11
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 11), "title", [], "any", false, false, true, 11), 11, $this->source), "html", null, true);
         echo "</title>
 
     <!-- Favicon -->
     <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"";
-        // line 15
+        // line 14
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/img/favicon.ico");
         echo "\">
 
@@ -62,52 +61,52 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
     <!-- CSS Here -->
     <!-- MagnificPopup.css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 20
+        // line 19
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/magnific-popup.css");
         echo "\">
     <!-- SlickNav.css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 22
+        // line 21
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/slicknav.min.css");
         echo "\">
     <!-- Owl.carousel.css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 24
+        // line 23
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/owl.carousel-2.3.4.min.css");
         echo "\">
     <!-- Fontawesome.css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 26
+        // line 25
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/fontawesome-free-5.12.0.min.css");
         echo "\">
     <!-- Bootstrap.css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 28
+        // line 27
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/bootstrap-4.3.1.min.css");
         echo "\">
     <!-- Default.css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 30
+        // line 29
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/default.css");
         echo "\">
     <!-- Style.css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 32
+        // line 31
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/style.css");
         echo "\">
     <!-- Responsive.css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 34
+        // line 33
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/responsive.css");
         echo "\">
 
     <!-- ColorNip.css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 37
+        // line 36
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/colornip.min.css");
         echo "\">
     <link id=\"theme\" rel=\"stylesheet\" href=\"";
-        // line 38
+        // line 37
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/theme-colors/theme-default.css");
         echo "\">
 
@@ -116,118 +115,40 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
         integrity=\"sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==\"
         crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />
 
-    <!-- Jquery -->
-    <script src=\"";
+    ";
+        // line 44
+        $context['__placeholder_css_default_contents'] = null;        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('css', $context['__placeholder_css_default_contents']);
+        unset($context['__placeholder_css_default_contents']);        // line 45
+        echo "
+    ";
         // line 46
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jquery-3.4.1.min.js");
-        echo "\"></script>
-
+        echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
+        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
+        // line 47
+        echo "
 </head>
 <body>
-
     ";
+        // line 50
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
         // line 51
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        echo "
+    ";
         // line 52
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 53
         echo "
     <!-- Start Footer Area -->
-    <footer class=\"footer-area pt-50 pb-60 theme-bg\" id=\"contact-us\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-lg-2 col-md-6 col-sm-12\">
-                    <div class=\"footer-widget\">
-                        <a href=\"HOME.html\" class=\"text-white\">
-                            <img src=\"";
-        // line 60
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/CFM_logo_footer.svg");
-        echo "\" alt=\"Christ Family Ministry Logo\">
-                        </a>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-6 col-sm-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>About CFM</h6>
-                        </div>
-                        <div>
-                            <p><a class=\"text-white\" href=\"#\">Vision</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Mission</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Core Values</a></p>
-                            <p><a class=\"text-white\" href=\"#\">History</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Our Senior Pastors</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-3 col-sm-6 col-xm-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>Centers</h6>
-                        </div>
-                        <div>
-                            <p><a class=\"text-white\" href=\"#\">Abuja</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Gboko</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Makurdi</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Kaduna</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Shagamu</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Abidjan</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>Ministries</h6>
-                        </div>
-                        <div>
-                            <p><a class=\"text-white\" href=\"#\">CFC</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Vine life fellowship</a></p>
-                            <p><a class=\"text-white\" href=\"#\">WOMOC</a></p>
-                            <p><a class=\"text-white\" href=\"#\">NCBI</a></p>
-                            <p><a class=\"text-white\" href=\"#\">CFC Music</a></p>
-                            <p><a class=\"text-white\" href=\"#\">CFC Kids</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Mission</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>Media Centers</h6>
-                        </div>
-                        <div>
-                            <p><a class=\"text-white\" href=\"#\">Blog</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Daily devotional</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Sermons</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Higher life magazines</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>Stay Connected</h6>
-                        </div>
-                        <ul class=\"social-links\">
-                            <li><a href=\"#\" target=\"_blank\"><i class=\"fab fa-facebook-f\"></i></a></li>
-                            <li><a href=\"#\" target=\"_blank\"><i class=\"fab fa-twitter\"></i></a></li>
-                            <li><a href=\"#\" target=\"_blank\"><i class=\"fab fa-google-plus-g\"></i></a></li>
-                            <li><a href=\"#\" target=\"_blank\"><i class=\"fab fa-linkedin-in\"></i></a></li>
-                        </ul>
-                        <div class=\"newsletter-text\">
-                            <p>Subscribe our news letter</p>
-                        </div>
-                        <form action=\"index.html\" class=\"newsletter-form\">
-                            <input type=\"email\" class=\"form-control subscrption-input text-light\"
-                                placeholder=\"Your email\">
-                            <button class=\"btn btn-subscribe btn-light text-dark mt-1\"><i
-                                    class=\"fas fa-arrow-right\"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer Area -->
+    ";
+        // line 55
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 56
+        echo "    <!-- End Footer Area -->
+
     <!-- End Copyright Area -->
     <div class=\"copyright-area theme-bg\">
         <div class=\"container\">
@@ -249,53 +170,58 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
     </div>
     <!-- End Copyright Area -->
     <!-- JS -->
+    <!-- Jquery.js -->
+    <script src=\"";
+        // line 80
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jquery-3.4.1.min.js");
+        echo "\"></script>
     <!-- Popper.js -->
     <script src=\"";
-        // line 170
+        // line 82
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/popper.min.js");
         echo "\"></script>
     <!-- Bootstrap.js -->
     <script src=\"";
-        // line 172
+        // line 84
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/bootstrap-4.3.1.min.js");
         echo "\"></script>
     <!-- Modernizr.js -->
     <script src=\"";
-        // line 174
+        // line 86
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/modernizr-3.5.0.min.js");
         echo "\"></script>
     <!-- Owl.Carousel.js -->
     <script src=\"";
-        // line 176
+        // line 88
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/owl.carousel-2.3.4.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 177
+        // line 89
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/owl.carousel2.thumbs.min.js");
         echo "\"></script>
     <!-- Waypoints.js -->
     <script src=\"";
-        // line 179
+        // line 91
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/waypoints-4.0.1.min.js");
         echo "\"></script>
     <!-- ColorNip.js -->
     <script src=\"";
-        // line 181
+        // line 93
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/colornip.min.js");
         echo "\"></script>
     <!-- SlickNav.js -->
     <script src=\"";
-        // line 183
+        // line 95
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/slicknav.min.js");
         echo "\"></script>
     <!-- ScrollUp.js -->
     <script src=\"";
-        // line 185
+        // line 97
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/jquery.scrollUp.min.js");
         echo "\"></script>
     <!-- MagnificPopup.js -->
     <script src=\"";
-        // line 187
+        // line 99
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/magnific-popup.min.js");
         echo "\"></script>
 
@@ -305,9 +231,33 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
         crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>
     <!-- Main.js -->
     <script src=\"";
-        // line 194
+        // line 106
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.js");
         echo "\"></script>
+
+    ";
+        // line 108
+        $context['__placeholder_js_default_contents'] = null;        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('js', $context['__placeholder_js_default_contents']);
+        unset($context['__placeholder_js_default_contents']);        // line 109
+        echo "
+    ";
+        // line 110
+        $_minify = System\Classes\CombineAssets::instance()->useMinify;
+        if ($_minify) {
+            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
+        }
+        else {
+            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
+            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
+        }
+        echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
+        unset($_minify);
+        // line 111
+        echo "    ";
+        echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
+        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
+        // line 112
+        echo "
 </body>
 </html>";
     }
@@ -324,7 +274,7 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
 
     public function getDebugInfo()
     {
-        return array (  309 => 194,  299 => 187,  294 => 185,  289 => 183,  284 => 181,  279 => 179,  274 => 177,  270 => 176,  265 => 174,  260 => 172,  255 => 170,  142 => 60,  132 => 52,  130 => 51,  122 => 46,  111 => 38,  107 => 37,  101 => 34,  96 => 32,  91 => 30,  86 => 28,  81 => 26,  76 => 24,  71 => 22,  66 => 20,  58 => 15,  52 => 12,  39 => 1,);
+        return array (  260 => 112,  256 => 111,  245 => 110,  242 => 109,  240 => 108,  235 => 106,  225 => 99,  220 => 97,  215 => 95,  210 => 93,  205 => 91,  200 => 89,  196 => 88,  191 => 86,  186 => 84,  181 => 82,  176 => 80,  150 => 56,  146 => 55,  142 => 53,  140 => 52,  137 => 51,  133 => 50,  128 => 47,  125 => 46,  122 => 45,  120 => 44,  110 => 37,  106 => 36,  100 => 33,  95 => 31,  90 => 29,  85 => 27,  80 => 25,  75 => 23,  70 => 21,  65 => 19,  57 => 14,  51 => 11,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -334,13 +284,12 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
 <head>
     <meta charset=\"utf-8\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-    <meta name=\"description\"
-        content=\"Be-one is a clean HTML5/CSS3 template suitable for Business, Corporate, Taxes, Broker, Ad...\">
+    <meta name=\"description\" content=\"Faith Adventure 2021\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
 
 
     <!-- Title -->
-    <title>FA'21 - {{ this.page.title }}</title>
+    <title>FA 21 - {{ this.page.title }}</title>
 
     <!-- Favicon -->
     <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"{{ 'assets/img/favicon.ico' | theme }}\">
@@ -373,109 +322,20 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
         integrity=\"sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==\"
         crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />
 
-    <!-- Jquery -->
-    <script src=\"{{ 'assets/js/jquery-3.4.1.min.js' | theme }}\"></script>
+    {% placeholder css %}
+
+    {% styles %}
 
 </head>
 <body>
+    {% partial 'site/header' %}
 
     {% page %}
 
     <!-- Start Footer Area -->
-    <footer class=\"footer-area pt-50 pb-60 theme-bg\" id=\"contact-us\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-lg-2 col-md-6 col-sm-12\">
-                    <div class=\"footer-widget\">
-                        <a href=\"HOME.html\" class=\"text-white\">
-                            <img src=\"{{ 'assets/assets/CFM_logo_footer.svg' | theme }}\" alt=\"Christ Family Ministry Logo\">
-                        </a>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-6 col-sm-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>About CFM</h6>
-                        </div>
-                        <div>
-                            <p><a class=\"text-white\" href=\"#\">Vision</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Mission</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Core Values</a></p>
-                            <p><a class=\"text-white\" href=\"#\">History</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Our Senior Pastors</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-3 col-sm-6 col-xm-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>Centers</h6>
-                        </div>
-                        <div>
-                            <p><a class=\"text-white\" href=\"#\">Abuja</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Gboko</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Makurdi</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Kaduna</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Shagamu</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Abidjan</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>Ministries</h6>
-                        </div>
-                        <div>
-                            <p><a class=\"text-white\" href=\"#\">CFC</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Vine life fellowship</a></p>
-                            <p><a class=\"text-white\" href=\"#\">WOMOC</a></p>
-                            <p><a class=\"text-white\" href=\"#\">NCBI</a></p>
-                            <p><a class=\"text-white\" href=\"#\">CFC Music</a></p>
-                            <p><a class=\"text-white\" href=\"#\">CFC Kids</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Mission</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>Media Centers</h6>
-                        </div>
-                        <div>
-                            <p><a class=\"text-white\" href=\"#\">Blog</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Daily devotional</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Sermons</a></p>
-                            <p><a class=\"text-white\" href=\"#\">Higher life magazines</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-lg-2 col-md-6\">
-                    <div class=\"footer-widget\">
-                        <div class=\"widget-title\">
-                            <h6>Stay Connected</h6>
-                        </div>
-                        <ul class=\"social-links\">
-                            <li><a href=\"#\" target=\"_blank\"><i class=\"fab fa-facebook-f\"></i></a></li>
-                            <li><a href=\"#\" target=\"_blank\"><i class=\"fab fa-twitter\"></i></a></li>
-                            <li><a href=\"#\" target=\"_blank\"><i class=\"fab fa-google-plus-g\"></i></a></li>
-                            <li><a href=\"#\" target=\"_blank\"><i class=\"fab fa-linkedin-in\"></i></a></li>
-                        </ul>
-                        <div class=\"newsletter-text\">
-                            <p>Subscribe our news letter</p>
-                        </div>
-                        <form action=\"index.html\" class=\"newsletter-form\">
-                            <input type=\"email\" class=\"form-control subscrption-input text-light\"
-                                placeholder=\"Your email\">
-                            <button class=\"btn btn-subscribe btn-light text-dark mt-1\"><i
-                                    class=\"fas fa-arrow-right\"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% partial 'site/footer' %}
     <!-- End Footer Area -->
+
     <!-- End Copyright Area -->
     <div class=\"copyright-area theme-bg\">
         <div class=\"container\">
@@ -497,6 +357,8 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
     </div>
     <!-- End Copyright Area -->
     <!-- JS -->
+    <!-- Jquery.js -->
+    <script src=\"{{ 'assets/js/jquery-3.4.1.min.js' | theme }}\"></script>
     <!-- Popper.js -->
     <script src=\"{{ 'assets/js/popper.min.js' | theme }}\"></script>
     <!-- Bootstrap.js -->
@@ -523,19 +385,25 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
         crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>
     <!-- Main.js -->
     <script src=\"{{ 'assets/js/main.js' | theme }}\"></script>
+
+    {% placeholder js %}
+
+    {% framework extras %}
+    {% scripts %}
+
 </body>
 </html>", "C:\\laragon\\www\\fa21/themes/fa/layouts/default.htm", "");
     }
     
     public function checkSecurity()
     {
-        static $tags = array("page" => 51);
-        static $filters = array("escape" => 12, "theme" => 15);
+        static $tags = array("placeholder" => 44, "styles" => 46, "partial" => 50, "page" => 52, "framework" => 110, "scripts" => 111);
+        static $filters = array("escape" => 11, "theme" => 14);
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['page'],
+                ['placeholder', 'styles', 'partial', 'page', 'framework', 'scripts'],
                 ['escape', 'theme'],
                 []
             );
