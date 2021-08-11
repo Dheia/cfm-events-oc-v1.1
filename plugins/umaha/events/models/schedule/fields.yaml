@@ -1,0 +1,41 @@
+fields:
+    event:
+        label: Event
+        span: auto
+        oc.commentPosition: ''
+        type: dropdown
+    date:
+        label: 'Event date'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        type: datepicker
+    schedule:
+        label: 'Schedules for the same day'
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                name:
+                    label: 'Schedule Name'
+                    span: full
+                    type: text
+                preacher:
+                    label: Preacher
+                    span: full
+                    type: dropdown
+                start:
+                    label: Starts
+                    mode: time
+                    span: full
+                    type: datepicker
+                end_time:
+                    label: Ends
+                    mode: time
+                    span: full
+                    type: datepicker
+                is_active:
+                    label: 'Publish?'
+                    span: full
+                    type: switch

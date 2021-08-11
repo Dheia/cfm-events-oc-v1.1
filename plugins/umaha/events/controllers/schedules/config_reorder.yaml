@@ -1,0 +1,4 @@
+title: Schedules
+modelClass: Umaha\Events\Models\Schedule
+toolbar:
+    buttons: reorder_toolbar

@@ -1,30 +1,33 @@
-title = "Plugin components"
-url = "/demo/plugins"
+title = "Test"
+url = "/test"
 layout = "default"
+is_hidden = 0
 
-[demoTodo]
-max = 3
+[Registration]
+event_id = 1
+title = 1
+gender = 1
+marital_status = 1
+is_partner = 1
+email = 1
+occupation = 1
+location = 0
+address = 1
+church_name = 1
+pastor_name = 1
+spouse = 1
+children = 1
+children_no = 1
+accommodation = 1
+feeding = 1
+transportation = 1
+coming_with_car = 0
+assist_with_car = 0
+arrival_date = 1
+departure_date = 1
+cfc_center = 0
+service_team = 0
+position_held = 0
+attendance_mode = 0
 ==
-<div class="jumbotron title-js">
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-                <h1>Plugin components</h1>
-                <p>Plugins can provide components, simple building blocks that enrich any page or layout. Check out the todo example below.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    {% component 'demoTodo' %}
-</div>
-
-<!-- Page Explanation -->
-<div class="container">{% partial "explain/plugins.htm" %}</div>
-
-<br />
-
-<div class="text-center">
-    <p><a target="_blank" href="http://octobercms.com/docs" class="btn btn-lg btn-default">Learn more at October's Documentation</a></p>
-</div>
+{% component 'Registration' %}

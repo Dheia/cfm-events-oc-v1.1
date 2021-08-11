@@ -1,0 +1,40 @@
+plugin:
+    name: 'umaha.events::lang.plugin.name'
+    description: 'umaha.events::lang.plugin.description'
+    author: Umaha
+    icon: oc-icon-calendar
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Events
+        url: umaha/events/events
+        icon: icon-calendar
+        permissions:
+            - create_events
+            - delete_events
+        sideMenu:
+            side-menu-item:
+                label: Registrations
+                url: umaha/events/registrations
+                icon: icon-users
+                permissions:
+                    - manage_registrations
+            side-menu-item2:
+                label: Schedules
+                url: umaha/events/schedules
+                icon: icon-sitemap
+                permissions:
+                    - manage_schedules
+permissions:
+    create_events:
+        tab: Events
+        label: 'create events'
+    delete_events:
+        tab: Events
+        label: 'delete events'
+    manage_registrations:
+        tab: Events
+        label: 'manage registrations'
+    manage_schedules:
+        tab: Events
+        label: 'manage schedules'

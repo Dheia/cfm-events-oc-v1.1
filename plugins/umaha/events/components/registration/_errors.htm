@@ -1,0 +1,11 @@
+{% if errors.all() %}
+<div class="alert alert-danger">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	<strong>Errors!</strong> Please fill in all required fields
+	<ul>
+		{% for error in errors.all() %}
+			<li>{{error}}</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}

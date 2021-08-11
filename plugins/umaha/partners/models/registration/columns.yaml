@@ -1,0 +1,21 @@
+columns:
+    fname:
+        label: 'First Name'
+        type: text
+        searchable: true
+        sortable: true
+    oname:
+        label: 'Other Names'
+        type: text
+        searchable: true
+        sortable: true
+    phone:
+        label: 'Phone Number'
+        type: text
+        searchable: true
+        sortable: true
+    commitment:
+        label: 'Monthly commitment'
+        type: number
+        searchable: true
+        sortable: true

@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/fa21/',
+    'url' => env('APP_URL', 'http://localhost/fa21/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -107,7 +107,7 @@ return [
     |
     */
 
-    'key' => 'LRjv2GMXWCXmSr5u2iaH2LqH9D8fyRB6',
+    'key' => env('APP_KEY', ''),
 
     'cipher' => 'AES-256-CBC',
 

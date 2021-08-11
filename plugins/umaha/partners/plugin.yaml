@@ -1,0 +1,21 @@
+plugin:
+    name: 'umaha.partners::lang.plugin.name'
+    description: 'umaha.partners::lang.plugin.description'
+    author: Umaha
+    icon: oc-icon-users
+    homepage: ''
+permissions:
+    add_partners:
+        tab: Partners
+        label: 'add partners'
+    delete_partners:
+        tab: Partners
+        label: 'delete partners'
+navigation:
+    main-menu-item:
+        label: Partners
+        url: umaha/partners/partnerscontroller
+        icon: icon-life-ring
+        permissions:
+            - add_partners
+            - delete_partners

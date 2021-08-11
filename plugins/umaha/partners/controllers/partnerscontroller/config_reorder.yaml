@@ -1,0 +1,4 @@
+title: PartnersController
+modelClass: Umaha\Partners\Models\Registration
+toolbar:
+    buttons: reorder_toolbar

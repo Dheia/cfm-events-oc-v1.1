@@ -1,0 +1,80 @@
+subject = "You have successfully registered for {{ event.name }}" 
+layout = "simple"
+==
+==
+<p>Beloved {{ user.name }},</p>
+
+<p>Thank you for taking out time to register for Faith Adventure 2020.</p>
+
+<p>It's going to be the best time of our lives yet and we are really excited at the transformation that you'll experience.</p>
+
+
+<p>Find details of your registration below</p>
+
+<table class="table table-striped table-condensed">
+	<tr>
+		<td>Reg. Number:</td>
+		<td><strong>{{ "%05d"|format(user.event_registration_number) }}</strong></td>
+	</tr>
+	<tr>
+		<td>Name:</td>
+		<td>{{ user.name }}</td>
+	</tr>
+	<tr>
+		<td>Phone:</td>
+		<td>{{ user.phone }}</td>
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td>{{ user.email }}</td>
+	</tr>
+	<tr>
+		<td>Accomodation:</td>
+		<td>
+			{% if user.accommodation == 1 %}
+			Yes
+			{% else %}
+			No
+			{% endif %}
+		</td>
+	</tr>
+	<tr>
+		<td>Feeding:</td>
+		<td>
+				{% if user.feeding == 1 %}
+				Yes
+				{% else %}
+				No
+				{% endif %}
+		</td>
+	</tr>
+	<tr>
+		<td>Transportation:</td>
+		<td>
+			{% if user.transportation == 1 %}
+			Yes
+			{% else %}
+			No
+			{% endif %}
+		</td>
+	</tr>
+	<tr>
+		<td>Arrival Date:</td>
+		<td>{{ user.arrival_date }}</td>
+	</tr>
+	<tr>
+		<td>Departure Date:</td>
+		<td>{{ user.departure_date }}</td>
+	</tr>
+</table>
+
+
+<p>Keep an eye out for our emails on further notifications and instructions. To avoid our mail going into your spam or Promotions, kindly add our mail to your contact list.</p>
+
+<p>You can also join the Telegram Channel (<a href="http://t.me/cfcic">t.me/cfcic</a>) for quick notifications and messages.</p>
+
+<p>We look forward to hosting you. </p>
+
+<p>We love and appreciate you.</p>
+
+<p>Do enjoy the rest of your day!</p>

@@ -1,0 +1,83 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+
+    event:
+        label: Event
+        modelClass: Umaha\Events\Models\Event
+#        conditions: event_slug in (:filtered)
+        # conditions: id in (select name from umaha_events_registrations where event_slug in (:filtered))
+        conditions: event_id in (:filtered)
+        nameFrom: name
+
+    # created_at:
+    #     label: Submission date
+    #     type: date
+    #     conditions: created_at >= ':filtered'
+
+    published_at:
+        label: Arrival range
+        type: daterange
+        conditions: arrival_date >= ':after' AND arrival_date <= ':before'
+
+    partner:
+        label: Partner
+        type: checkbox
+        default: 0
+        conditions: is_partner = true
+
+    accommodation:
+        label: Accommodation
+        type: checkbox
+        default: 0
+        conditions: accommodation = true
+
+    feeding:
+        label: Feeding
+        type: checkbox
+        default: 0
+        conditions: feeding = true
+
+    transportation:
+        label: Transportation
+        type: checkbox
+        default: 0
+        conditions: transportation = true
+
+    coming_with_car:
+        label: Coming with car
+        type: checkbox
+        default: 0
+        conditions: coming_with_car = true
+
+    assist_with_car:
+        label: Assist with car
+        type: checkbox
+        default: 0
+        conditions: assist_with_car = true
+
+    attendance_mode :
+        label: Online/Onsite Attrendance
+        type: checkbox
+        default: 1
+        conditions: attendance_mode  = 'Onsite'
+
+    # approved:
+    #     label: Approved
+    #     type: switch
+    #     default: 2
+    #     conditions:
+    #         - is_approved <> true
+    #         - is_approved = true
+
+    # status:
+    #     label: Status
+    #     type: group
+    #     conditions: status in (:filtered)
+    #     options:
+    #         pending: Pending
+    #         active: Active
+    #         closed: Closed
+

@@ -1,0 +1,28 @@
+columns:
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    arrival_date:
+        label: 'Arrival date'
+        type: date
+        searchable: true
+        sortable: true
+    departure_date:
+        label: 'Departure date'
+        type: date
+        searchable: true
+        sortable: true
+    event_slug:
+        label: Event
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: event
+    created_at:
+        label: 'Registration Date'
+        type: date
+        searchable: true
+        sortable: true

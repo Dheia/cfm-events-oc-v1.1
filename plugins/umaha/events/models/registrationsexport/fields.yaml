@@ -1,0 +1,58 @@
+fields:
+    event:
+        label: Event
+        type: dropdown
+        # placeholder: Select an eventrue
+        span: left
+    marital_status:
+        label: 'Marital status'
+        oc.commentPosition: ''
+        options:
+            null: Select one
+            Married: Married
+            Single: Single
+            Divorced: Divorced
+            Seperated: Seperated
+        span: left
+        type: dropdown
+    attendance_mode:
+        label: 'Mode of attendance (onsite/online)'
+        span: left
+        options:
+            null: Select one
+            Onsite: Onsite
+            Online: Online
+        span: left
+        type: dropdown
+    is_partner:
+        label: 'Is a partner'
+        span: left
+        type: switch
+    spouse:
+        label: 'Coming with spouse'
+        span: left
+        type: switch
+    children:
+        label: 'Coming with children'
+        span: left
+        type: switch
+    accommodation:
+        label: 'Require accommodation?'
+        span: left
+        type: switch
+    feeding:
+        label: 'Require feeding?'
+        span: left
+        type: switch
+    transportation:
+        label: 'Require transportation during the event?'
+        span: left
+        type: switch
+    coming_with_car:
+        label: 'Coming with car'
+        span: left
+        type: switch
+    assist_with_car:
+        label: 'Assist with car'
+        span: left
+        type: switch

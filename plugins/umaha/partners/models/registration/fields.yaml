@@ -1,0 +1,65 @@
+fields:
+    fname:
+        label: 'First Name'
+        span: left
+        type: text
+    oname:
+        label: 'Other Names'
+        span: right
+        type: text
+    email:
+        label: Email
+        span: left
+        type: text
+    phone:
+        label: 'Phone Number'
+        span: right
+        type: number
+    postal_address:
+        label: 'Postal Address'
+        size: ''
+        span: left
+        type: textarea
+    residential_address:
+        label: 'Residential Address'
+        size: ''
+        span: right
+        type: textarea
+    sex:
+        label: Sex
+        options:
+            Male: Male
+            Female: Female
+        span: left
+        type: dropdown
+    status:
+        label: Status
+        options:
+            Single: Single
+            Married: Married
+            Widow/Widower: Widow/Widower
+            Divorced: Divorced
+        span: auto
+        type: dropdown
+    occupation:
+        label: Occupation
+        span: left
+        type: text
+    commitment:
+        label: 'Monthly Financial Committment (Naira)'
+        span: right
+        type: text
+    dob:
+        label: Birthday
+        mode: date
+        span: left
+        type: datepicker
+    wedding_anniversary:
+        label: 'Wedding anniversary'
+        mode: date
+        span: right
+        type: datepicker
+    reminder:
+        label: 'Do you want to be reminded of your committment?'
+        span: auto
+        type: switch

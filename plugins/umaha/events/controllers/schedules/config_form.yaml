@@ -1,0 +1,10 @@
+name: Schedules
+form: $/umaha/events/models/schedule/fields.yaml
+modelClass: Umaha\Events\Models\Schedule
+defaultRedirect: umaha/events/schedules
+create:
+    redirect: 'umaha/events/schedules/update/:id'
+    redirectClose: umaha/events/schedules
+update:
+    redirect: umaha/events/schedules
+    redirectClose: umaha/events/schedules

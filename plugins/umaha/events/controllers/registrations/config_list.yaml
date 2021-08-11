@@ -1,0 +1,13 @@
+list: $/umaha/events/models/registration/columns.yaml
+modelClass: Umaha\Events\Models\Registration
+title: Registrations
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'umaha/events/registrations/update/:id'
+filter: config_filter.yaml

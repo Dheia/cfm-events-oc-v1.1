@@ -1,0 +1,86 @@
+fields:
+    name:
+        label: Name
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: Slug
+        oc.commentPosition: ''
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    start_date:
+        label: 'Start date'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        required: 1
+        type: datepicker
+    end_date:
+        label: 'End date'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        required: 1
+        type: datepicker
+    phone:
+        label: 'Contact Phone'
+        oc.commentPosition: ''
+        span: auto
+        type: number
+    email:
+        label: 'Contact email'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    venue:
+        label: Venue
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    description:
+        label: 'Event description'
+        size: ''
+        oc.commentPosition: ''
+        span: auto
+        type: richeditor
+    flyer:
+        label: 'Event flyer'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+        comment: 'Upload an event flyer'
+    is_register:
+        label: 'Will people register for this event?'
+        span: auto
+        required: 1
+        type: switch
+    preachers:
+        label: Preachers
+        span: auto
+        oc.commentPosition: ''
+        nameFrom: name
+        descriptionFrom: description
+        required: 1
+        type: relation
+    start_time:
+        label: 'Start time'
+        span: left
+        oc.commentPosition: ''
+        mode: time
+        type: datepicker
+    centre_id:
+        label: 'Host Centre'
+        span: auto
+        type: dropdown

@@ -1,0 +1,93 @@
+<form 
+	data-request="onSubmit" 
+	data-request-validate 
+	data-request-flash 
+	data-request-success="document.getElementById('form').reset();" 
+	class="form-horizontal" 
+	id="form">
+
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="inputEmail4">First Name</label>
+			<input name="fname" type="text" class="form-control" id="fname" placeholder="">
+			<small><span class="text-danger" data-validate-for="fname">Kindly enter your first name</span></small>
+		</div>
+		<div class="form-group col-md-6">
+			<label for="inputPassword4">Other Name</label>
+			<input name="oname" type="text" class="form-control" id="oname" placeholder="">
+			<small><span class="text-danger" data-validate-for="oname">Kindly enter your other name</span></small>
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="email">Email</label>
+			<input name="email" type="email" class="form-control" id="email" placeholder="">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="phone">Phone Number</label>
+			<input name="phone" type="number" class="form-control" id="phone" placeholder="">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="postal_address">Postal Address</label>
+			<textarea name="postal_address" class="form-control" rows="5"></textarea>
+			<small><span class="text-danger" data-validate-for="postal_address">Kindly enter your postal address</span></small>
+		</div>
+		<div class="form-group col-md-6">
+			<label for="inputEmail4">Residential Address</label>
+			<textarea name="residential_address" class="form-control" rows="5"></textarea>
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="sex">Sex</label>
+			<select name="sex" id="sex" class="form-control">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</select>
+			<small><span class="text-danger" data-validate-for="sex"></span></small>
+		</div>
+		<div class="form-group col-md-6">
+			<label for="status">Status</label>
+			<select name="status" id="status" class="form-control">
+				<option value="Single">Single</option>
+				<option value="Married">Married</option>
+				<option value="Widow/Widower">Widow/Widower</option>
+				<option value="Divorced">Divorced</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="occupation">Occupation</label>
+			<input name="occupation" type="text" class="form-control" id="occupation" placeholder="">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="commitment">Monthly Financial Commitment (Naira)</label>
+			<input name="commitment" type="number" class="form-control" id="commitment" placeholder="">
+			<small><span class="text-danger" data-validate-for="commitment">Kindly state your monthly committment</span></small>
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="dob">Birthday</label>
+			<input name="dob" type="date" class="form-control" id="dob" placeholder="">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="wedding_anniversary">Wedding anniversary</label>
+			<input name="wedding_anniversary" type="date" class="form-control" id="wedding_anniversary" placeholder="">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<p for="reminder">Do you want to be reminded of your committment?</p>
+
+			<input name="reminder" type="radio" class="" id="Yes" value="1"> Yes
+			<br>
+			<input name="reminder" type="radio" class="" id="No" value="0"> No <br>
+			<small><span class="text-danger" data-validate-for="reminder">Do you want to be reminded of your committment?</span></small>
+		</div>
+	</div>
+	<button type="submit" class="btn btn-primary btn-h7">Submit</button>
+</form>

@@ -1,0 +1,20 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+defaultRedirect: umaha/events/registrations
+
+import:
+  title: Import Event Registrations
+  modelClass: Umaha\Events\Models\RegistrationsImport
+  list: $/umaha/events/models/registrationsimport/columns.yaml
+  redirect: umaha/events/registrations
+  form: $/umaha/events/models/registrationsimport/fields.yaml
+
+export:
+  title: Export Event Registrations
+  modelClass: Umaha\Events\Models\RegistrationsExport
+  list: $/umaha/events/models/registrationsexport/columns.yaml
+  redirect: umaha/events/registrations
+  filename: registrations.csv
+  form: $/umaha/events/models/registrationsexport/fields.yaml

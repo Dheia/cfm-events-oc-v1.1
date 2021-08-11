@@ -1,0 +1,138 @@
+fields:
+    title:
+        label: Dropdown
+        oc.commentPosition: ''
+        options:
+            Bishop: Bishop
+            Rev.: Rev.
+            Pastor: Pastor
+            Mr: Mr
+            Mrs: Mrs
+            Miss: Miss
+        span: auto
+        type: dropdown
+    name:
+        label: 'Full name'
+        oc.commentPosition: ''
+        span: left
+        required: 1
+        type: text
+    gender:
+        label: Gender
+        oc.commentPosition: ''
+        options:
+            Male: Male
+            Female: Female
+        span: left
+        required: 1
+        type: radio
+    is_partner:
+        label: 'Are you a partner?'
+        span: left
+        type: switch
+    phone:
+        label: 'Phone number'
+        oc.commentPosition: ''
+        span: left
+        type: number
+    email:
+        label: Email
+        oc.commentPosition: ''
+        span: left
+        required: 1
+        type: text
+    marital_status:
+        label: 'Marital status'
+        oc.commentPosition: ''
+        options:
+            Married: Married
+            Single: Single
+            Divorced: Divorced
+            Seperated: Seperated
+        span: left
+        required: 1
+        type: dropdown
+    occupation:
+        label: Occupation
+        oc.commentPosition: ''
+        span: left
+        type: text
+    church_name:
+        label: 'Church name'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    pastor_name:
+        label: 'Your Pastor''s name'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    address:
+        label: 'Your Address'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    spouse:
+        label: 'Coming with spouse?'
+        span: left
+        required: 1
+        type: switch
+    children:
+        label: 'Coming with children?'
+        span: left
+        required: 1
+        type: switch
+    children_no:
+        label: 'Number of children coming with'
+        oc.commentPosition: ''
+        span: left
+        type: number
+    children_ages:
+        label: 'Children Ages'
+        span: left
+        type: text
+    attendance_mode:
+        label: 'Will you be attending onsite or online?'
+        span: left
+        type: text
+    arrival_date:
+        label: 'Arrival date'
+        oc.commentPosition: ''
+        mode: date
+        span: left
+        type: datepicker
+    departure_date:
+        label: 'Departure date'
+        oc.commentPosition: ''
+        mode: date
+        span: left
+        type: datepicker
+    accommodation:
+        label: 'Do you require accommodation?'
+        span: left
+        required: 1
+        type: switch
+    feeding:
+        label: 'Do you require feeding?'
+        span: left
+        required: 1
+        type: switch
+    transportation:
+        label: 'Do you require transportation during the event?'
+        span: left
+        required: 1
+        type: switch
+    event_slug:
+        label: Event
+        showSearch: true
+        span: left
+        readOnly: 1
+        type: dropdown
+    coming_with_car:
+        label: 'Coming with car'
+        span: left
+        type: switch
+    assist_with_car:
+        label: 'Assist with car'
+        span: left
+        type: switch

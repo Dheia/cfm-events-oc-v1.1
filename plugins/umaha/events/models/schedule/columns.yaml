@@ -1,0 +1,11 @@
+columns:
+    event_slug:
+        label: Event
+        type: text
+        searchable: true
+        sortable: true
+    date:
+        label: Date
+        type: date
+        searchable: true
+        sortable: true

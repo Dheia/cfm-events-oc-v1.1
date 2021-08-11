@@ -1,0 +1,6 @@
+fields:
+    event:
+        label: Event
+        type: dropdown
+        # placeholder: Select an event
+        required: true

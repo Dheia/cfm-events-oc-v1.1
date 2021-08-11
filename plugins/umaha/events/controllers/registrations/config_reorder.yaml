@@ -1,0 +1,4 @@
+title: Registrations
+modelClass: Umaha\Events\Models\Registration
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,12 @@
+list: $/umaha/partners/models/registration/columns.yaml
+modelClass: Umaha\Partners\Models\Registration
+title: PartnersController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'umaha/partners/partnerscontroller/update/:id'

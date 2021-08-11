@@ -1,0 +1,56 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+
+columns:
+    title:
+        label: Title
+    name:
+        label: 'Full name'
+    gender:
+        label: Gender
+    is_partner:
+        label: 'Partner?'
+    phone:
+        label: 'Phone number'
+    email:
+        label: Email
+    marital_status:
+        label: 'Marital status'
+    occupation:
+        label: Occupation
+    church_name:
+        label: 'Church name'
+    pastor_name:
+        label: 'Pastor''s name'
+    address:
+        label: 'Address'
+    spouse:
+        label: 'Coming with spouse?'
+    children:
+        label: 'Coming with children?'
+    children_no:
+        label: 'Number of children coming with'
+    children_ages:
+        label: 'Children Ages'
+    accommodation:
+        label: 'Accommodation?'
+    feeding:
+        label: 'Feeding?'
+    transportation:
+        label: 'Transportation during the event?'
+    coming_with_car:
+        label: 'Coming with car'
+    assist_with_car:
+        label: 'Assist with car'
+    attendance_mode:
+        label: 'Will you be attending onsite or online?'
+    arrival_date:
+        label: 'Arrival date'
+    departure_date:
+        label: 'Departure date'
+    event_registration_number:
+        label: 'Event Registration Number'
+    created_at:
+        label: 'Date Registered'

@@ -1,0 +1,21 @@
+columns:
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    start_date:
+        label: 'Start date'
+        type: text
+        searchable: true
+        sortable: true
+    end_date:
+        label: 'End date'
+        type: text
+        searchable: true
+        sortable: true
+    church:
+        label: 'Host Centre by'
+        type: text
+        select: name
+        relation: centre

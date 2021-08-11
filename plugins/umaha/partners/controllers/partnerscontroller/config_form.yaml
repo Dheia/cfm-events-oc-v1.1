@@ -1,0 +1,10 @@
+name: PartnersController
+form: $/umaha/partners/models/registration/fields.yaml
+modelClass: Umaha\Partners\Models\Registration
+defaultRedirect: umaha/partners/partnerscontroller
+create:
+    redirect: 'umaha/partners/partnerscontroller/update/:id'
+    redirectClose: umaha/partners/partnerscontroller
+update:
+    redirect: umaha/partners/partnerscontroller
+    redirectClose: umaha/partners/partnerscontroller

@@ -1,0 +1,10 @@
+name: Registrations
+form: $/umaha/events/models/registration/fields.yaml
+modelClass: Umaha\Events\Models\Registration
+defaultRedirect: umaha/events/registrations
+create:
+    redirect: 'umaha/events/registrations/update/:id'
+    redirectClose: umaha/events/registrations
+update:
+    redirect: umaha/events/registrations
+    redirectClose: umaha/events/registrations
