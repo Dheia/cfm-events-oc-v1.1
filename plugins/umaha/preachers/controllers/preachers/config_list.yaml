@@ -1,0 +1,12 @@
+list: $/umaha/preachers/models/preacher/columns.yaml
+modelClass: Umaha\Preachers\Models\Preacher
+title: Preachers
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'umaha/preachers/preachers/update/:id'

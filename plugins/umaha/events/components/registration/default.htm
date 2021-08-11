@@ -1,8 +1,3 @@
-{% flash %}
-    <div class="alert alert-{{ type }}">
-        {{ message }}
-    </div>
-{% endflash %}
 
 <p>Fields marked <span style="color: red;">*</span> are required</p>
 
@@ -12,7 +7,14 @@
     data-request-flash
     data-request-success="document.getElementById('regForm').reset();"
     class=""
-    id="form">
+    id="regForm">
+    
+    {% flash %}
+        <div class="alert alert-{{ type }}">
+            {{ message }}
+        </div>
+    {% endflash %}
+
 
     
 <div class="form-row">
@@ -507,9 +509,12 @@
 
 </div>
 
+<div class="text-center pt-100 pb-20">
+    <button data-attach-loading type="submit" class="btn btn-lg btn-danger text-white register-btn btn-h7" style="padding: 10px border-radius: 4px; background-image: none;">Register</button>
+</div>
 
-    <div class="text-center pt-100 pb-20">
-        <button data-attach-loading type="submit" class="btn btn-lg btn-danger text-white register-btn btn-h7" style="padding: 10px border-radius: 4px; background-image: none;">Register</button>
-    </div>
+<div class="text-center pt-20 pb-50">
+    <p class="text-muted">Register your kids <a class="theme-color-text" href="#">here</a></p>
+</div>
 
 {{ form_close() }}

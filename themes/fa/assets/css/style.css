@@ -87,9 +87,9 @@ html {
 }
 body {
   font-family: var(--font-proxima);
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1rem;
   color: #666666;
   line-height: 24px;
 }

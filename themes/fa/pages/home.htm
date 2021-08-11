@@ -4,7 +4,7 @@ layout = "default"
 is_hidden = 0
 
 [Registration]
-event_id = 1
+event = 1
 title = 1
 gender = 1
 marital_status = 1
@@ -28,47 +28,46 @@ departure_date = 1
 cfc_center = 0
 service_team = 0
 position_held = 0
-attendance_mode = 0
+attendance_mode = 1
 ==
-
 <!-- Start Slider Area -->
-<div class="slider-area ">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-12">
-                <div class="slider-carousel owl-carousel">
-                    <div class="single-slider slider-bg-1 text-center">
-                        <div class="slider-inner">
-                            <div class="mx-auto w-75">
-                                <h1 class="text-white text-center font-weight-bold">Join
-                                    the gathering of
-                                    thousands of believers
-                                    at the 21st Faith Adventure </h1>
+    <div class="slider-area ">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="slider-carousel owl-carousel">
+                        <div class="single-slider slider-bg-1 text-center">
+                            <div class="slider-inner">
+                                <div class="mx-auto w-75">
+                                    <h1 class="text-white text-center font-weight-bold">Join
+                                        the gathering of
+                                        thousands of believers
+                                        at the 21st Faith Adventure </h1>
+                                </div>
+                                <a class="btn btn-danger text-center pt-70"
+                                    style="height: 60px !important; width: 223px; font-size: 28px !important;"
+                                    href="javascript:void(0)" data-toggle="modal"
+                                    data-target="#registerModal">Register</a>
                             </div>
-                            <a class="btn btn-danger text-center pt-70"
-                                style="height: 60px !important; width: 223px; font-size: 28px !important;"
-                                href="#"
-                                class="registerBtn">Register</a>
                         </div>
-                    </div>
-                    <div class="single-slider slider-bg-2 text-center">
-                        <div class="slider-inner">
-                            <div>
-                                <img src="{{ 'assets/assets/event.svg' | theme }}" class="img-responsive" width="300px"
-                                    height="200px" alt="">
+                        <div class="single-slider slider-bg-2 text-center">
+                            <div class="slider-inner">
+                                <div>
+                                    <img src="{{ 'assets/assets/event.svg' | theme }}" class="img-responsive" width="300px"
+                                        height="200px" alt="">
+                                </div>
+                                <a class="btn search-trigger btn-danger text-center mt-50"
+                                    style="height: 60px !important; width: 223px; font-size: 28px !important;"
+                                    href="javascript:void(0)" data-toggle="modal"
+                                    data-target="#registerModal">Register</a>
                             </div>
-                            <a class="btn search-trigger btn-danger text-center mt-50"
-                                style="height: 60px !important; width: 223px; font-size: 28px !important;"
-                                href="#"
-                                class="registerBtn">Register</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Slider Area -->
+    <!-- End Slider Area -->
 
 <!-- Start About -->
 <div class="about_resource" id="feature">
@@ -976,9 +975,6 @@ attendance_mode = 0
 </div> -->
 <!-- End Brands Area -->
 
-
-
-<!-- <div class="search-overlay"></div> -->
 <!-- Modal -->
 <div class="modal pt-100 fade bd-example-modal-xl" tabindex="-1" role="dialog" id="registerModal"
     aria-labelledby="registerModal" aria-hidden="true">
@@ -995,32 +991,11 @@ attendance_mode = 0
             </div>
 
             <div class="modal-body">
-                loading...
+                {% component 'Registration' %}
             </div>
         </div>
     </div>
 </div>
-
-
-
-{% put js %}
-<script>
-    $( 'a' ).on('click', function(e) {
-
-      const eventid = $( e.currentTarget ).data('eventid')
-
-      $('form').request('onRegForm', 
-      {
-        success: function(data) {
-          this.success(data).done(function() {
-            $('#registerModal').modal('show')
-          });
-        }
-      })
-
-    })
-</script>
-{% endput %}
 
 <div class="modal pt-100 fade bd-example-modal-xl" tabindex="-1" role="dialog" id="thankYouModal"
     aria-labelledby="thankYouModal" aria-hidden="true">

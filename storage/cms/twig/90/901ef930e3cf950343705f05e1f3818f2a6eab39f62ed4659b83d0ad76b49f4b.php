@@ -67,7 +67,7 @@ class __TwigTemplate_a53a9a65dfbb81c530736d8c598bb196bdf8575ff9820d8e2e97d98f647
                             <li>
                                 <a type=\"button\" class=\"btn\" data-toggle=\"modal\" data-target=\"#thankYouModal\">Thank You</a></li>
                             <li class=\"text-left\">
-                                <button class=\"btn btn-danger\" class=\"registerBtn\">Register</button>
+                                    <button class=\"btn btn-danger\" data-toggle=\"modal\" data-target=\"#registerModal\">Register</button>
                             </li>
                         </ul>
                     </nav>
@@ -124,7 +124,7 @@ class __TwigTemplate_a53a9a65dfbb81c530736d8c598bb196bdf8575ff9820d8e2e97d98f647
                             <li>
                                 <a type=\"button\" class=\"btn\" data-toggle=\"modal\" data-target=\"#thankYouModal\">Thank You</a></li>
                             <li class=\"text-left\">
-                                <button class=\"btn btn-danger\" class=\"registerBtn\">Register</button>
+                                    <button class=\"btn btn-danger\" data-toggle=\"modal\" data-target=\"#registerModal\">Register</button>
                             </li>
                         </ul>
                     </nav>

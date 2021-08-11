@@ -1,0 +1,4 @@
+title: Preachers
+modelClass: Umaha\Preachers\Models\Preacher
+toolbar:
+    buttons: reorder_toolbar

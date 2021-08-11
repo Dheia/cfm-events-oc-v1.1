@@ -26,7 +26,7 @@ class Registration extends ComponentBase
     public function defineProperties()
     {
         return [
-          'event_id' => [
+          'event' => [
                'title'             => 'Event',
                'description'       => 'Select an event',
                'default'           => 1,
@@ -192,44 +192,43 @@ class Registration extends ComponentBase
             $data = post();
 
             $rules = [
-                    // 'title'            => 'required',
-                    'name'            => 'required',
-                    // 'email'           => 'email',
-                    // 'phone'           => 'required',
-                    // 'location'        => 'required',
-                    // 'marital_status'  => 'required',
-                    // 'phone'           => 'required',
-                    // 'gender'          => 'required',
-                    // 'is_partner'      => 'required',
-                    // 'occupation'      => 'required',
-                    // 'address'         => 'required',
-                    // 'church_name'     => 'required',
-                    // 'cfc_center'     => 'required',
-                    // 'pastor_name'     => 'required',
-                    // 'spouse'          => 'required',
-                    // 'children'        => 'required',
-                    // 'children_no'     => 'required',
-                    // 'children_ages'   => 'required',
-                    'attendance_mode'  => 'required',
-                    // 'arrival_date'    => 'required_if:attendance_mode,Onsite',
-                    // 'departure_date'  => 'required_if:attendance_mode,Onsite',
-                    // 'accommodation'   => 'required',
-                    // 'feeding'         => 'required',
-                    // 'transportation'  => 'required',
-                    // 'coming_with_car' => 'required',
-                    // 'assist_with_car' => 'required',
-                ];
+               // 'title'            => 'required',
+               'name'            => 'required',
+               // 'email'           => 'email',
+               // 'phone'           => 'required',
+               // 'location'        => 'required',
+               // 'marital_status'  => 'required',
+               // 'phone'           => 'required',
+               // 'gender'          => 'required',
+               // 'is_partner'      => 'required',
+               // 'occupation'      => 'required',
+               // 'address'         => 'required',
+               // 'church_name'     => 'required',
+               // 'cfc_center'     => 'required',
+               // 'pastor_name'     => 'required',
+               // 'spouse'          => 'required',
+               // 'children'        => 'required',
+               // 'children_no'     => 'required',
+               // 'children_ages'   => 'required',
+               'attendance_mode'  => 'required',
+               // 'arrival_date'    => 'required_if:attendance_mode,Onsite',
+               // 'departure_date'  => 'required_if:attendance_mode,Onsite',
+               // 'accommodation'   => 'required',
+               // 'feeding'         => 'required',
+               // 'transportation'  => 'required',
+               // 'coming_with_car' => 'required',
+               // 'assist_with_car' => 'required',
+               ];
 
-          $validator = Validator::make($data, $rules);
+               $validator = Validator::make($data, $rules);
 
-          if ($validator->fails()) {
-               throw new ValidationException($validator);
+               if ($validator->fails()) {
+                    throw new ValidationException($validator);
 
-          }
+               }
 
-            $eventSlug = $this->param('slug');
-            // $eventSlug = 'gathering-2020';
-            $event = EventModel::where('slug', $eventSlug)->first();
+            $eventId = $this->property('event');;
+            $event = EventModel::where('id', $eventId)->first();
 
             $alreadyRegistered = RegistrationComp::where([
                 'name'           => post('name'),
@@ -238,7 +237,7 @@ class Registration extends ComponentBase
                 'phone'          => post('phone'),
                 'email'          => post('email'),
                 'occupation'     => post('occupation'),
-                'event_id'       => $event->id,
+                'event_slug'     => $event->slug,
                 ])->first();
 
             if (!is_null($alreadyRegistered)) {
@@ -246,65 +245,61 @@ class Registration extends ComponentBase
                 return Redirect::back()->withInput();
             }
 
-
-            $lastRegistrationNumber = RegistrationComp::where('event_slug', $eventSlug)->orderBy('created_at', 'desc')->first();
+            $lastRegistrationNumber = RegistrationComp::where('event_slug', $event->slug)->orderBy('created_at', 'desc')->first();
             if($lastRegistrationNumber) {
                 $event_registration_number = $lastRegistrationNumber->event_registration_number;
             } else {
                 $event_registration_number = 0;
             }
 
-
-            $reg                 = new RegistrationComp;
-            $reg->event_registration_number          = $event_registration_number + 1;
-            $reg->title          = post('title');
-            $reg->name           = post('name');
-            $reg->gender         = post('gender');
-            $reg->marital_status = post('marital_status');
-            $reg->phone          = post('phone');
-            $reg->email          = post('email');
-            $reg->is_partner     = post('is_partner');
-            $reg->occupation     = post('occupation');
-            $reg->address        = post('address');
-            $reg->church_name    = post('church_name');
-            $reg->pastor_name    = post('pastor_name');
-            $reg->spouse         = post('spouse');
-            $reg->children       = post('children');
-            $reg->children_no    = post('children_no');
-            $reg->children_ages  = post('children_ages');
-            $reg->arrival_date   = post('arrival_date');
-            $reg->departure_date = post('departure_date');
-            $reg->accommodation  = post('accommodation');
-            $reg->feeding        = post('feeding');
-            $reg->transportation = post('transportation');
-            $reg->coming_with_car = post('coming_with_car');
-            $reg->assist_with_car = post('assist_with_car');
-            $reg->attendance_mode = post('attendance_mode');
-            $reg->event_slug     = $eventSlug;
-            $reg->event_id       = $event->id;
+            $reg = new RegistrationComp;
+            $reg->event_registration_number = $event_registration_number + 1;
+            $reg->title                     = post('title');
+            $reg->name                      = post('name');
+            $reg->gender                    = post('gender');
+            $reg->marital_status            = post('marital_status');
+            $reg->phone                     = post('phone');
+            $reg->email                     = post('email');
+            $reg->is_partner                = post('is_partner');
+            $reg->occupation                = post('occupation');
+            $reg->address                   = post('address');
+            $reg->church_name               = post('church_name');
+            $reg->pastor_name               = post('pastor_name');
+            $reg->spouse                    = post('spouse');
+            $reg->children                  = post('children');
+            $reg->children_no               = post('children_no');
+            $reg->children_ages             = post('children_ages');
+            $reg->arrival_date              = post('arrival_date');
+            $reg->departure_date            = post('departure_date');
+            $reg->accommodation             = post('accommodation');
+            $reg->feeding                   = post('feeding');
+            $reg->transportation            = post('transportation');
+            $reg->coming_with_car           = post('coming_with_car');
+            $reg->assist_with_car           = post('assist_with_car');
+            $reg->attendance_mode           = post('attendance_mode');
+            $reg->event_slug                = $event->slug;
             $reg->save();
 
-            // Fire registered event
+          // Fire registered event
           //   if($reg) {
           //       Event::fire('umaha.events.registration', [$reg, $event]);
           //   }
 
+          // Send mail after delay of 5 seconds
+          if (post('email')) {
+               $vars = ['user' => $reg, 'event' => $event];
 
-            // Send mail after delay of 5 seconds
-            if (post('email')) {
-                 $vars = ['user' => $reg, 'event' => $event];
+               Mail::queue('umaha.events::mail.fa2021', $vars, function($message) use ($event) {
 
-                 Mail::queue('umaha.events::mail.gathering2020', $vars, function($message) use ($event) {
+                    $message->to((array)post('email'), post('name'));
+                    $message->subject($event->name);
 
-                     $message->to((array)post('email'), post('name'));
-                     $message->subject($event->name);
+               });
+          }
 
-                 });
-            }
-
-            Flash::success('Registration successful');
-            return redirect()->back();
-          //   return Redirect::to('thanks-registering');
+          Flash::success('Registration successful');
+          // return redirect()->back();
+          // return Redirect::to('thanks-registering');
 
         } catch (Exception $ex) {
             if (Request::ajax()) throw $ex;
@@ -315,6 +310,11 @@ class Registration extends ComponentBase
 
     public function onRender() {
         $this->page['centres'] = CentreModel::all();
+    }
+
+    public function getEventOptions()
+    {
+        return EventModel::lists('name', 'id');
     }
 
     public function onRegForm() {

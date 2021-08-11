@@ -115,38 +115,39 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
         integrity=\"sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==\"
         crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />
 
+
     ";
-        // line 44
+        // line 45
         $context['__placeholder_css_default_contents'] = null;        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('css', $context['__placeholder_css_default_contents']);
-        unset($context['__placeholder_css_default_contents']);        // line 45
+        unset($context['__placeholder_css_default_contents']);        // line 46
         echo "
     ";
-        // line 46
+        // line 47
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 47
+        // line 48
         echo "
 </head>
 <body>
     ";
-        // line 50
+        // line 51
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 51
+        // line 52
         echo "
     ";
-        // line 52
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 53
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 54
         echo "
     <!-- Start Footer Area -->
     ";
-        // line 55
+        // line 56
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 56
+        // line 57
         echo "    <!-- End Footer Area -->
 
     <!-- End Copyright Area -->
@@ -172,56 +173,56 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
     <!-- JS -->
     <!-- Jquery.js -->
     <script src=\"";
-        // line 80
+        // line 81
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jquery-3.4.1.min.js");
         echo "\"></script>
     <!-- Popper.js -->
     <script src=\"";
-        // line 82
+        // line 83
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/popper.min.js");
         echo "\"></script>
     <!-- Bootstrap.js -->
     <script src=\"";
-        // line 84
+        // line 85
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/bootstrap-4.3.1.min.js");
         echo "\"></script>
     <!-- Modernizr.js -->
     <script src=\"";
-        // line 86
+        // line 87
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/modernizr-3.5.0.min.js");
         echo "\"></script>
     <!-- Owl.Carousel.js -->
     <script src=\"";
-        // line 88
+        // line 89
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/owl.carousel-2.3.4.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 89
+        // line 90
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/owl.carousel2.thumbs.min.js");
         echo "\"></script>
     <!-- Waypoints.js -->
     <script src=\"";
-        // line 91
+        // line 92
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/waypoints-4.0.1.min.js");
         echo "\"></script>
     <!-- ColorNip.js -->
     <script src=\"";
-        // line 93
+        // line 94
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/colornip.min.js");
         echo "\"></script>
     <!-- SlickNav.js -->
     <script src=\"";
-        // line 95
+        // line 96
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/slicknav.min.js");
         echo "\"></script>
     <!-- ScrollUp.js -->
     <script src=\"";
-        // line 97
+        // line 98
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/jquery.scrollUp.min.js");
         echo "\"></script>
     <!-- MagnificPopup.js -->
     <script src=\"";
-        // line 99
+        // line 100
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/vendor/magnific-popup.min.js");
         echo "\"></script>
 
@@ -231,17 +232,17 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
         crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>
     <!-- Main.js -->
     <script src=\"";
-        // line 106
+        // line 107
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.js");
         echo "\"></script>
 
     ";
-        // line 108
+        // line 109
         $context['__placeholder_js_default_contents'] = null;        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('js', $context['__placeholder_js_default_contents']);
-        unset($context['__placeholder_js_default_contents']);        // line 109
+        unset($context['__placeholder_js_default_contents']);        // line 110
         echo "
     ";
-        // line 110
+        // line 111
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -252,11 +253,11 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 111
+        // line 112
         echo "    ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 112
+        // line 113
         echo "
 </body>
 </html>";
@@ -274,7 +275,7 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
 
     public function getDebugInfo()
     {
-        return array (  260 => 112,  256 => 111,  245 => 110,  242 => 109,  240 => 108,  235 => 106,  225 => 99,  220 => 97,  215 => 95,  210 => 93,  205 => 91,  200 => 89,  196 => 88,  191 => 86,  186 => 84,  181 => 82,  176 => 80,  150 => 56,  146 => 55,  142 => 53,  140 => 52,  137 => 51,  133 => 50,  128 => 47,  125 => 46,  122 => 45,  120 => 44,  110 => 37,  106 => 36,  100 => 33,  95 => 31,  90 => 29,  85 => 27,  80 => 25,  75 => 23,  70 => 21,  65 => 19,  57 => 14,  51 => 11,  39 => 1,);
+        return array (  261 => 113,  257 => 112,  246 => 111,  243 => 110,  241 => 109,  236 => 107,  226 => 100,  221 => 98,  216 => 96,  211 => 94,  206 => 92,  201 => 90,  197 => 89,  192 => 87,  187 => 85,  182 => 83,  177 => 81,  151 => 57,  147 => 56,  143 => 54,  141 => 53,  138 => 52,  134 => 51,  129 => 48,  126 => 47,  123 => 46,  121 => 45,  110 => 37,  106 => 36,  100 => 33,  95 => 31,  90 => 29,  85 => 27,  80 => 25,  75 => 23,  70 => 21,  65 => 19,  57 => 14,  51 => 11,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -321,6 +322,7 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css\"
         integrity=\"sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==\"
         crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />
+
 
     {% placeholder css %}
 
@@ -397,7 +399,7 @@ class __TwigTemplate_a69a4db036472b40a8dde97c0904393e5ec8000b7831c857bdb028e4cff
     
     public function checkSecurity()
     {
-        static $tags = array("placeholder" => 44, "styles" => 46, "partial" => 50, "page" => 52, "framework" => 110, "scripts" => 111);
+        static $tags = array("placeholder" => 45, "styles" => 47, "partial" => 51, "page" => 53, "framework" => 111, "scripts" => 112);
         static $filters = array("escape" => 11, "theme" => 14);
         static $functions = array();
 

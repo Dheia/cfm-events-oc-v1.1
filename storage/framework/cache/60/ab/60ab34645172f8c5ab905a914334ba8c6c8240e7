@@ -1,4 +1,4 @@
-1628684476a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1753:"
+1628702639a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1786:"
 <!-- Start Header Area -->
 <div class="header-area">
     <div class="container">
@@ -27,7 +27,7 @@
                             <li>
                                 <a type="button" class="btn" data-toggle="modal" data-target="#thankYouModal">Thank You</a></li>
                             <li class="text-left">
-                                <button class="btn btn-danger" class="registerBtn">Register</button>
+                                    <button class="btn btn-danger" data-toggle="modal" data-target="#registerModal">Register</button>
                             </li>
                         </ul>
                     </nav>
@@ -36,7 +36,7 @@
         </div>
     </div>
 </div>
-<!-- End Header Area -->";s:5:"mtime";i:1628683816;s:6:"markup";s:1752:"<!-- Start Header Area -->
+<!-- End Header Area -->";s:5:"mtime";i:1628695783;s:6:"markup";s:1785:"<!-- Start Header Area -->
 <div class="header-area">
     <div class="container">
         <div class="header-wrapper">
@@ -64,7 +64,7 @@
                             <li>
                                 <a type="button" class="btn" data-toggle="modal" data-target="#thankYouModal">Thank You</a></li>
                             <li class="text-left">
-                                <button class="btn btn-danger" class="registerBtn">Register</button>
+                                    <button class="btn btn-danger" data-toggle="modal" data-target="#registerModal">Register</button>
                             </li>
                         </ul>
                     </nav>

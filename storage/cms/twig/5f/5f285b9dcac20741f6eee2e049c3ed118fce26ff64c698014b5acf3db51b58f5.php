@@ -37,46 +37,46 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
         $macros = $this->macros;
         // line 1
         echo "<!-- Start Slider Area -->
-<div class=\"slider-area \">
-    <div class=\"container-fluid p-0\">
-        <div class=\"row no-gutters\">
-            <div class=\"col-12\">
-                <div class=\"slider-carousel owl-carousel\">
-                    <div class=\"single-slider slider-bg-1 text-center\">
-                        <div class=\"slider-inner\">
-                            <div class=\"mx-auto w-75\">
-                                <h1 class=\"text-white text-center font-weight-bold\">Join
-                                    the gathering of
-                                    thousands of believers
-                                    at the 21st Faith Adventure </h1>
+    <div class=\"slider-area \">
+        <div class=\"container-fluid p-0\">
+            <div class=\"row no-gutters\">
+                <div class=\"col-12\">
+                    <div class=\"slider-carousel owl-carousel\">
+                        <div class=\"single-slider slider-bg-1 text-center\">
+                            <div class=\"slider-inner\">
+                                <div class=\"mx-auto w-75\">
+                                    <h1 class=\"text-white text-center font-weight-bold\">Join
+                                        the gathering of
+                                        thousands of believers
+                                        at the 21st Faith Adventure </h1>
+                                </div>
+                                <a class=\"btn btn-danger text-center pt-70\"
+                                    style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
+                                    href=\"javascript:void(0)\" data-toggle=\"modal\"
+                                    data-target=\"#registerModal\">Register</a>
                             </div>
-                            <a class=\"btn btn-danger text-center pt-70\"
-                                style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
-                                href=\"#\"
-                                class=\"registerBtn\">Register</a>
                         </div>
-                    </div>
-                    <div class=\"single-slider slider-bg-2 text-center\">
-                        <div class=\"slider-inner\">
-                            <div>
-                                <img src=\"";
+                        <div class=\"single-slider slider-bg-2 text-center\">
+                            <div class=\"slider-inner\">
+                                <div>
+                                    <img src=\"";
         // line 24
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/event.svg");
         echo "\" class=\"img-responsive\" width=\"300px\"
-                                    height=\"200px\" alt=\"\">
+                                        height=\"200px\" alt=\"\">
+                                </div>
+                                <a class=\"btn search-trigger btn-danger text-center mt-50\"
+                                    style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
+                                    href=\"javascript:void(0)\" data-toggle=\"modal\"
+                                    data-target=\"#registerModal\">Register</a>
                             </div>
-                            <a class=\"btn search-trigger btn-danger text-center mt-50\"
-                                style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
-                                href=\"#\"
-                                class=\"registerBtn\">Register</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Slider Area -->
+    <!-- End Slider Area -->
 
 <!-- Start About -->
 <div class=\"about_resource\" id=\"feature\">
@@ -1050,9 +1050,6 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
 </div> -->
 <!-- End Brands Area -->
 
-
-
-<!-- <div class=\"search-overlay\"></div> -->
 <!-- Modal -->
 <div class=\"modal pt-100 fade bd-example-modal-xl\" tabindex=\"-1\" role=\"dialog\" id=\"registerModal\"
     aria-labelledby=\"registerModal\" aria-hidden=\"true\">
@@ -1060,7 +1057,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
         <div class=\"modal-content\">
             <div class=\"text-center modal-icon\">
                 <img src=\"";
-        // line 955
+        // line 952
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/assets/fa_reg_top.svg");
         echo "\" class=\"img-responsive\" alt=\"\">
             </div>
@@ -1072,39 +1069,17 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             </div>
 
             <div class=\"modal-body\">
-                loading...
-            </div>
+                ";
+        // line 962
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("Registration"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 963
+        echo "            </div>
         </div>
     </div>
 </div>
 
-
-
-";
-        // line 973
-        echo $this->env->getExtension('Cms\Twig\Extension')->startBlock('js'        );
-        // line 974
-        echo "<script>
-    \$( 'a' ).on('click', function(e) {
-
-      const eventid = \$( e.currentTarget ).data('eventid')
-
-      \$('form').request('onRegForm', 
-      {
-        success: function(data) {
-          this.success(data).done(function() {
-            \$('#registerModal').modal('show')
-          });
-        }
-      })
-
-    })
-</script>
-";
-        // line 973
-        echo $this->env->getExtension('Cms\Twig\Extension')->endBlock(true        );
-        // line 991
-        echo "
 <div class=\"modal pt-100 fade bd-example-modal-xl\" tabindex=\"-1\" role=\"dialog\" id=\"thankYouModal\"
     aria-labelledby=\"thankYouModal\" aria-hidden=\"true\">
     <div class=\"modal-dialog modal-xl\">
@@ -1120,7 +1095,7 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             <div class=\"modal-body\">
                 <div class=\"text-center\">
                     <img src=\"";
-        // line 1006
+        // line 982
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/assets/thank_you.svg");
         echo "\" class=\"img-responsive w-50 h-50\" alt=\"\">
                 </div>
@@ -1142,49 +1117,49 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
 
     public function getDebugInfo()
     {
-        return array (  1124 => 1006,  1107 => 991,  1105 => 973,  1087 => 974,  1085 => 973,  1064 => 955,  1044 => 938,  1036 => 933,  1028 => 928,  1020 => 923,  1012 => 918,  1004 => 913,  463 => 375,  455 => 370,  433 => 351,  421 => 342,  407 => 331,  395 => 322,  381 => 311,  369 => 302,  337 => 273,  307 => 246,  276 => 218,  241 => 186,  209 => 157,  174 => 125,  141 => 95,  108 => 65,  64 => 24,  39 => 1,);
+        return array (  1099 => 982,  1078 => 963,  1074 => 962,  1061 => 952,  1044 => 938,  1036 => 933,  1028 => 928,  1020 => 923,  1012 => 918,  1004 => 913,  463 => 375,  455 => 370,  433 => 351,  421 => 342,  407 => 331,  395 => 322,  381 => 311,  369 => 302,  337 => 273,  307 => 246,  276 => 218,  241 => 186,  209 => 157,  174 => 125,  141 => 95,  108 => 65,  64 => 24,  39 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<!-- Start Slider Area -->
-<div class=\"slider-area \">
-    <div class=\"container-fluid p-0\">
-        <div class=\"row no-gutters\">
-            <div class=\"col-12\">
-                <div class=\"slider-carousel owl-carousel\">
-                    <div class=\"single-slider slider-bg-1 text-center\">
-                        <div class=\"slider-inner\">
-                            <div class=\"mx-auto w-75\">
-                                <h1 class=\"text-white text-center font-weight-bold\">Join
-                                    the gathering of
-                                    thousands of believers
-                                    at the 21st Faith Adventure </h1>
+    <div class=\"slider-area \">
+        <div class=\"container-fluid p-0\">
+            <div class=\"row no-gutters\">
+                <div class=\"col-12\">
+                    <div class=\"slider-carousel owl-carousel\">
+                        <div class=\"single-slider slider-bg-1 text-center\">
+                            <div class=\"slider-inner\">
+                                <div class=\"mx-auto w-75\">
+                                    <h1 class=\"text-white text-center font-weight-bold\">Join
+                                        the gathering of
+                                        thousands of believers
+                                        at the 21st Faith Adventure </h1>
+                                </div>
+                                <a class=\"btn btn-danger text-center pt-70\"
+                                    style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
+                                    href=\"javascript:void(0)\" data-toggle=\"modal\"
+                                    data-target=\"#registerModal\">Register</a>
                             </div>
-                            <a class=\"btn btn-danger text-center pt-70\"
-                                style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
-                                href=\"#\"
-                                class=\"registerBtn\">Register</a>
                         </div>
-                    </div>
-                    <div class=\"single-slider slider-bg-2 text-center\">
-                        <div class=\"slider-inner\">
-                            <div>
-                                <img src=\"{{ 'assets/assets/event.svg' | theme }}\" class=\"img-responsive\" width=\"300px\"
-                                    height=\"200px\" alt=\"\">
+                        <div class=\"single-slider slider-bg-2 text-center\">
+                            <div class=\"slider-inner\">
+                                <div>
+                                    <img src=\"{{ 'assets/assets/event.svg' | theme }}\" class=\"img-responsive\" width=\"300px\"
+                                        height=\"200px\" alt=\"\">
+                                </div>
+                                <a class=\"btn search-trigger btn-danger text-center mt-50\"
+                                    style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
+                                    href=\"javascript:void(0)\" data-toggle=\"modal\"
+                                    data-target=\"#registerModal\">Register</a>
                             </div>
-                            <a class=\"btn search-trigger btn-danger text-center mt-50\"
-                                style=\"height: 60px !important; width: 223px; font-size: 28px !important;\"
-                                href=\"#\"
-                                class=\"registerBtn\">Register</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Slider Area -->
+    <!-- End Slider Area -->
 
 <!-- Start About -->
 <div class=\"about_resource\" id=\"feature\">
@@ -2092,9 +2067,6 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
 </div> -->
 <!-- End Brands Area -->
 
-
-
-<!-- <div class=\"search-overlay\"></div> -->
 <!-- Modal -->
 <div class=\"modal pt-100 fade bd-example-modal-xl\" tabindex=\"-1\" role=\"dialog\" id=\"registerModal\"
     aria-labelledby=\"registerModal\" aria-hidden=\"true\">
@@ -2111,32 +2083,11 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
             </div>
 
             <div class=\"modal-body\">
-                loading...
+                {% component 'Registration' %}
             </div>
         </div>
     </div>
 </div>
-
-
-
-{% put js %}
-<script>
-    \$( 'a' ).on('click', function(e) {
-
-      const eventid = \$( e.currentTarget ).data('eventid')
-
-      \$('form').request('onRegForm', 
-      {
-        success: function(data) {
-          this.success(data).done(function() {
-            \$('#registerModal').modal('show')
-          });
-        }
-      })
-
-    })
-</script>
-{% endput %}
 
 <div class=\"modal pt-100 fade bd-example-modal-xl\" tabindex=\"-1\" role=\"dialog\" id=\"thankYouModal\"
     aria-labelledby=\"thankYouModal\" aria-hidden=\"true\">
@@ -2162,13 +2113,13 @@ class __TwigTemplate_af0868c978ea7c6bdeb38ddb9909572637bdb2545457e998c405a3b6d72
     
     public function checkSecurity()
     {
-        static $tags = array("put" => 973);
+        static $tags = array("component" => 962);
         static $filters = array("theme" => 24);
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['put'],
+                ['component'],
                 ['theme'],
                 []
             );

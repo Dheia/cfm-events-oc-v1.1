@@ -32,4 +32,8 @@
   'umaha\\events\\Controllers\\mails' => 'plugins\\umaha\\events\\controllers\\mails.php',
   'Umaha\\Events\\Components\\Registration' => 'plugins\\umaha\\events\\components\\Registration.php',
   'Umaha\\Partners\\Components\\PartnerRegistration' => 'plugins\\umaha\\partners\\components\\PartnerRegistration.php',
+  'umaha\\preachers\\Plugin' => 'plugins\\umaha\\preachers\\Plugin.php',
+  'Umaha\\Preachers\\Models\\Preacher' => 'plugins\\umaha\\preachers\\models\\Preacher.php',
+  'RainLab\\User\\Models\\MailBlocker' => 'plugins\\rainlab\\user\\models\\MailBlocker.php',
+  'system\\Controllers\\mailtemplates' => 'modules\\system\\controllers\\mailtemplates.php',
 );

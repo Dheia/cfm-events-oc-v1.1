@@ -1,0 +1,10 @@
+name: Preachers
+form: $/umaha/preachers/models/preacher/fields.yaml
+modelClass: Umaha\Preachers\Models\Preacher
+defaultRedirect: umaha/preachers/preachers
+create:
+    redirect: 'umaha/preachers/preachers/update/:id'
+    redirectClose: umaha/preachers/preachers
+update:
+    redirect: umaha/preachers/preachers
+    redirectClose: umaha/preachers/preachers

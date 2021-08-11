@@ -59,19 +59,19 @@
     border-radius: 8px !important;
   }
   .faq-card_text-h2 {
-      cursor: pointer;
+    cursor: pointer;
     font-family: var(--font-proxima);
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 26px;
     color: #000000;
   }
   .faq-card_text-p {
     font-family: var(--font-proxima);
     font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
+    font-weight: lighter;
+    font-size: 1rem;
     line-height: 17px;
     color: #000000;
   }
@@ -141,7 +141,7 @@
     width: 100%;
   }
   .testimonial-text {
-    font-size: 10px;
+    font-size: 1rem;
     padding: 2em;
   }
   .testimonial-button-group {
@@ -200,9 +200,9 @@
   .features-text {
     font-family: var(--font-proxima);
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
+    font-weight: lighter;
+    font-size: 1rem;
+    line-height: 22px;
     color: #ffffff;
   }
 

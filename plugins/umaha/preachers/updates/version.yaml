@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table umaha_preachers_'
+    - builder_table_create_umaha_preachers_.php
+1.0.3:
+    - 'Updated table umaha_preachers_'
+    - builder_table_update_umaha_preachers_.php

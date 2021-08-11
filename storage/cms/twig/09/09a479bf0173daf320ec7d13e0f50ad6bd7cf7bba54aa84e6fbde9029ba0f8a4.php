@@ -35,22 +35,7 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        $_type = isset($context["type"]) ? $context["type"] : null;        $_message = isset($context["message"]) ? $context["message"] : null;        // line 1
-        foreach (Flash::getMessages() as $type => $messages) {
-            foreach ($messages as $message) {
-                $context["type"] = $type;                $context["message"] = $message;                // line 2
-                echo "    <div class=\"alert alert-";
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["type"] ?? null), 2, $this->source), "html", null, true);
-                echo "\">
-        ";
-                // line 3
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["message"] ?? null), 3, $this->source), "html", null, true);
-                echo "
-    </div>
-";
-            }
-        }
-        $context["type"] = $_type;        $context["message"] = $_message;        // line 6
+        // line 1
         echo "
 <p>Fields marked <span style=\"color: red;\">*</span> are required</p>
 
@@ -60,17 +45,36 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     data-request-flash
     data-request-success=\"document.getElementById('regForm').reset();\"
     class=\"\"
-    id=\"form\">
+    id=\"regForm\">
+    
+    ";
+        $_type = isset($context["type"]) ? $context["type"] : null;        $_message = isset($context["message"]) ? $context["message"] : null;        // line 12
+        foreach (Flash::getMessages() as $type => $messages) {
+            foreach ($messages as $message) {
+                $context["type"] = $type;                $context["message"] = $message;                // line 13
+                echo "        <div class=\"alert alert-";
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["type"] ?? null), 13, $this->source), "html", null, true);
+                echo "\">
+            ";
+                // line 14
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["message"] ?? null), 14, $this->source), "html", null, true);
+                echo "
+        </div>
+    ";
+            }
+        }
+        $context["type"] = $_type;        $context["message"] = $_message;        // line 17
+        echo "
 
     
 <div class=\"form-row\">
 
     ";
-        // line 20
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "title"], "method", false, false, true, 20)) {
-            // line 21
+        // line 22
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "title"], "method", false, false, true, 22)) {
+            // line 23
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50 ";
-            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "title"], "method", false, false, true, 21)) ? ("has-error") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "title"], "method", false, false, true, 23)) ? ("has-error") : (""));
             echo "\">
         <label for=\"title\">
             Title
@@ -113,11 +117,11 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 62
+        // line 64
         echo "
     <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50 ";
-        // line 63
-        echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "name"], "method", false, false, true, 63)) ? ("has-error") : (""));
+        // line 65
+        echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "name"], "method", false, false, true, 65)) ? ("has-error") : (""));
         echo "\">
         <label for=\"name\">
             Name <span style=\"color: red;\">*</span>
@@ -130,11 +134,11 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
 
     ";
-        // line 74
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "gender"], "method", false, false, true, 74)) {
-            // line 75
+        // line 76
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "gender"], "method", false, false, true, 76)) {
+            // line 77
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50 ";
-            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "gender"], "method", false, false, true, 75)) ? ("has-error") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "gender"], "method", false, false, true, 77)) ? ("has-error") : (""));
             echo "\">
         <label>GENDER</label>
         <div class=\"d-flex\">
@@ -161,14 +165,14 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 100
+        // line 102
         echo "
     ";
-        // line 101
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "marital_status"], "method", false, false, true, 101)) {
-            // line 102
+        // line 103
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "marital_status"], "method", false, false, true, 103)) {
+            // line 104
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50 ";
-            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "marital_status"], "method", false, false, true, 102)) ? ("has-error") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "marital_status"], "method", false, false, true, 104)) ? ("has-error") : (""));
             echo "\">
         <label class=\"\" for=\"marital_status\">
             Marital status
@@ -196,7 +200,7 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 128
+        // line 130
         echo "    
     <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50\">
         <label class=\"\" for=\"phone\">
@@ -210,11 +214,11 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
 
     ";
-        // line 140
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "email"], "method", false, false, true, 140)) {
-            // line 141
+        // line 142
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "email"], "method", false, false, true, 142)) {
+            // line 143
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50 ";
-            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "email"], "method", false, false, true, 141)) ? ("has-error") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "email"], "method", false, false, true, 143)) ? ("has-error") : (""));
             echo "\">
         <label class=\"\" for=\"email\">
             Email
@@ -227,12 +231,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 152
+        // line 154
         echo "
     ";
-        // line 153
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "is_partner"], "method", false, false, true, 153)) {
-            // line 154
+        // line 155
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "is_partner"], "method", false, false, true, 155)) {
+            // line 156
             echo "    <div class=\"col-lg-6 col-sm-12 pt-50\">
         <label>Are you a partner?</label>
         <div class=\"d-flex\">
@@ -258,12 +262,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 178
+        // line 180
         echo "
     ";
-        // line 179
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "occupation"], "method", false, false, true, 179)) {
-            // line 180
+        // line 181
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "occupation"], "method", false, false, true, 181)) {
+            // line 182
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50\">
         <label class=\"\" for=\"occupation\">
             Occupation
@@ -273,12 +277,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 188
+        // line 190
         echo "
     ";
-        // line 189
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "location"], "method", false, false, true, 189)) {
-            // line 190
+        // line 191
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "location"], "method", false, false, true, 191)) {
+            // line 192
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50\">
         <label class=\"\" for=\"location\">
             Location <span style=\"color: red;\">*</span>
@@ -291,12 +295,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 201
+        // line 203
         echo "
     ";
-        // line 202
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "address"], "method", false, false, true, 202)) {
-            // line 203
+        // line 204
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "address"], "method", false, false, true, 204)) {
+            // line 205
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50\">
         <label class=\"\" for=\"address\">
             Your address
@@ -306,45 +310,45 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 211
+        // line 213
         echo "
     ";
-        // line 212
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "cfc_center"], "method", false, false, true, 212)) {
-            // line 213
+        // line 214
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "cfc_center"], "method", false, false, true, 214)) {
+            // line 215
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50\">
         <label class=\"\" for=\"cfc_center\">
             CFC Center
         </label>
         <select class=\"form-control form-control-lg\" id=\"cfc_center\" name=\"cfc_center\" title=\"CFC Center\" type=\"text\">
             ";
-            // line 218
+            // line 220
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["centres"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["centre"]) {
-                // line 219
+                // line 221
                 echo "            <option value=\"";
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["centre"], "name", [], "any", false, false, true, 219), 219, $this->source), "html", null, true);
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["centre"], "name", [], "any", false, false, true, 221), 221, $this->source), "html", null, true);
                 echo "\">";
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["centre"], "name", [], "any", false, false, true, 219), 219, $this->source), "html", null, true);
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["centre"], "name", [], "any", false, false, true, 221), 221, $this->source), "html", null, true);
                 echo "</option>
             ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['centre'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 221
+            // line 223
             echo "        </select>
         </input>
     </div>
     ";
         }
-        // line 225
+        // line 227
         echo "
     ";
-        // line 226
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "service_team"], "method", false, false, true, 226)) {
-            // line 227
+        // line 228
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "service_team"], "method", false, false, true, 228)) {
+            // line 229
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50\">
         <label class=\"\" for=\"service_team\">
             Service Team
@@ -354,10 +358,10 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 235
+        // line 237
         echo "    ";
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "position_held"], "method", false, false, true, 235)) {
-            // line 236
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "position_held"], "method", false, false, true, 237)) {
+            // line 238
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50\">
         <label class=\"\" for=\"position_held\">
             Position Held
@@ -367,12 +371,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 244
+        // line 246
         echo "
     ";
-        // line 245
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "church_name"], "method", false, false, true, 245)) {
-            // line 246
+        // line 247
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "church_name"], "method", false, false, true, 247)) {
+            // line 248
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50\">
         <label class=\"\" for=\"church_name\">
             The name of your church
@@ -382,10 +386,10 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 254
+        // line 256
         echo "    ";
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "pastor_name"], "method", false, false, true, 254)) {
-            // line 255
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "pastor_name"], "method", false, false, true, 256)) {
+            // line 257
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50\">
         <label class=\"\" for=\"pastor_name\">
             Your pastor's name
@@ -395,12 +399,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 263
+        // line 265
         echo "
     ";
-        // line 264
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "spouse"], "method", false, false, true, 264)) {
-            // line 265
+        // line 266
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "spouse"], "method", false, false, true, 266)) {
+            // line 267
             echo "    <div class=\"col-lg-6 col-sm-12 pt-50\">
         <label>Are you coming with your spouse?</label>
         <div class=\"d-flex\">
@@ -424,12 +428,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 287
+        // line 289
         echo "
     ";
-        // line 288
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "children"], "method", false, false, true, 288)) {
-            // line 289
+        // line 290
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "children"], "method", false, false, true, 290)) {
+            // line 291
             echo "    <div class=\"col-lg-6 col-sm-12 pt-50\">
         <label>Are you coming with your children?</label>
         <div class=\"d-flex\">
@@ -453,14 +457,14 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 311
+        // line 313
         echo "
     ";
-        // line 312
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "children_no"], "method", false, false, true, 312)) {
-            // line 313
+        // line 314
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "children_no"], "method", false, false, true, 314)) {
+            // line 315
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50 ";
-            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "children_no"], "method", false, false, true, 313)) ? ("has-error") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "children_no"], "method", false, false, true, 315)) ? ("has-error") : (""));
             echo "\">
         <label class=\"\" for=\"children_no\">
             Number of children
@@ -473,14 +477,14 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 324
+        // line 326
         echo "    
     ";
-        // line 325
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "children_ages"], "method", false, false, true, 325)) {
-            // line 326
+        // line 327
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "children_ages"], "method", false, false, true, 327)) {
+            // line 328
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50 ";
-            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "children_ages"], "method", false, false, true, 326)) ? ("has-error") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "children_ages"], "method", false, false, true, 328)) ? ("has-error") : (""));
             echo "\">
         <label class=\"\" for=\"children_ages\">
             Children Ages <small>(comma seperated)</small>
@@ -493,12 +497,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 337
+        // line 339
         echo "
     ";
-        // line 338
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "accommodation"], "method", false, false, true, 338)) {
-            // line 339
+        // line 340
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "accommodation"], "method", false, false, true, 340)) {
+            // line 341
             echo "    <div class=\"col-lg-6 col-sm-12 pt-50\">
         <label>Do you require accommodation during this event?</label>
         <div class=\"d-flex\">
@@ -522,12 +526,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 361
+        // line 363
         echo "    
     ";
-        // line 362
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "feeding"], "method", false, false, true, 362)) {
-            // line 363
+        // line 364
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "feeding"], "method", false, false, true, 364)) {
+            // line 365
             echo "    <div class=\"col-lg-6 col-sm-12 pt-50\">
         <label>Do you require feeding during this event?</label>
         <div class=\"d-flex\">
@@ -551,12 +555,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 385
+        // line 387
         echo "
     ";
-        // line 386
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "transportation"], "method", false, false, true, 386)) {
-            // line 387
+        // line 388
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "transportation"], "method", false, false, true, 388)) {
+            // line 389
             echo "    <div class=\"col-lg-6 col-sm-12 pt-50\">
         <label>Do you require transportation during this event?</label>
         <div class=\"d-flex\">
@@ -580,12 +584,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 409
+        // line 411
         echo "
     ";
-        // line 410
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "coming_with_car"], "method", false, false, true, 410)) {
-            // line 411
+        // line 412
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "coming_with_car"], "method", false, false, true, 412)) {
+            // line 413
             echo "    <div class=\"col-lg-6 col-sm-12 pt-50\">
         <label>Do you require transportation during this event?</label>
         <div class=\"d-flex\">
@@ -609,12 +613,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 433
+        // line 435
         echo "
     ";
-        // line 434
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "assist_with_car"], "method", false, false, true, 434)) {
-            // line 435
+        // line 436
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "assist_with_car"], "method", false, false, true, 436)) {
+            // line 437
             echo "    <div class=\"col-lg-6 col-sm-12 pt-50\">
         <label>Do you require transportation during this event?</label>
         <div class=\"d-flex\">
@@ -638,12 +642,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 457
+        // line 459
         echo "
     ";
-        // line 458
-        if (twig_get_attribute($this->env, $this->source, ($context["Registration"] ?? null), "property", [0 => "attendance_mode"], "method", false, false, true, 458)) {
-            // line 459
+        // line 460
+        if (twig_get_attribute($this->env, $this->source, ($context["Registration"] ?? null), "property", [0 => "attendance_mode"], "method", false, false, true, 460)) {
+            // line 461
             echo "    <div class=\"col-lg-6 col-sm-12 pt-50\">
         <label>Will you be attending onsite or online?</label>
         <div class=\"d-flex\">
@@ -667,14 +671,14 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 481
+        // line 483
         echo "
     ";
-        // line 482
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "arrival_date"], "method", false, false, true, 482)) {
-            // line 483
+        // line 484
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "arrival_date"], "method", false, false, true, 484)) {
+            // line 485
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6  pt-50 ";
-            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "arrival_date"], "method", false, false, true, 483)) ? ("has-error") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "arrival_date"], "method", false, false, true, 485)) ? ("has-error") : (""));
             echo "\">
         <label class=\"\" for=\"arrival_date\">
             Date of arrival
@@ -687,14 +691,14 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 494
+        // line 496
         echo "
     ";
-        // line 495
-        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "departure_date"], "method", false, false, true, 495)) {
-            // line 496
+        // line 497
+        if (twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "property", [0 => "departure_date"], "method", false, false, true, 497)) {
+            // line 498
             echo "    <div class=\"col-lg-6 col-sm-12 col-md-6 pt-50 ";
-            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "departure_date"], "method", false, false, true, 496)) ? ("has-error") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "has", [0 => "departure_date"], "method", false, false, true, 498)) ? ("has-error") : (""));
             echo "\">
         <label class=\"\" for=\"departure_date\">
             Date of departure
@@ -707,17 +711,20 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     </div>
     ";
         }
-        // line 507
+        // line 509
         echo "
 </div>
 
+<div class=\"text-center pt-100 pb-20\">
+    <button data-attach-loading type=\"submit\" class=\"btn btn-lg btn-danger text-white register-btn btn-h7\" style=\"padding: 10px border-radius: 4px; background-image: none;\">Register</button>
+</div>
 
-    <div class=\"text-center pt-100 pb-20\">
-        <button data-attach-loading type=\"submit\" class=\"btn btn-lg btn-danger text-white register-btn btn-h7\" style=\"padding: 10px border-radius: 4px; background-image: none;\">Register</button>
-    </div>
+<div class=\"text-center pt-20 pb-50\">
+    <p class=\"text-muted\">Register your kids <a class=\"theme-color-text\" href=\"#\">here</a></p>
+</div>
 
 ";
-        // line 515
+        // line 520
         echo call_user_func_array($this->env->getFunction('form_close')->getCallable(), ["close"]);
         echo "
 ";
@@ -735,17 +742,12 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
 
     public function getDebugInfo()
     {
-        return array (  721 => 515,  711 => 507,  696 => 496,  694 => 495,  691 => 494,  676 => 483,  674 => 482,  671 => 481,  647 => 459,  645 => 458,  642 => 457,  618 => 435,  616 => 434,  613 => 433,  589 => 411,  587 => 410,  584 => 409,  560 => 387,  558 => 386,  555 => 385,  531 => 363,  529 => 362,  526 => 361,  502 => 339,  500 => 338,  497 => 337,  482 => 326,  480 => 325,  477 => 324,  462 => 313,  460 => 312,  457 => 311,  433 => 289,  431 => 288,  428 => 287,  404 => 265,  402 => 264,  399 => 263,  389 => 255,  386 => 254,  376 => 246,  374 => 245,  371 => 244,  361 => 236,  358 => 235,  348 => 227,  346 => 226,  343 => 225,  337 => 221,  326 => 219,  322 => 218,  315 => 213,  313 => 212,  310 => 211,  300 => 203,  298 => 202,  295 => 201,  282 => 190,  280 => 189,  277 => 188,  267 => 180,  265 => 179,  262 => 178,  236 => 154,  234 => 153,  231 => 152,  216 => 141,  214 => 140,  200 => 128,  170 => 102,  168 => 101,  165 => 100,  136 => 75,  134 => 74,  120 => 63,  117 => 62,  72 => 21,  70 => 20,  54 => 6,  47 => 3,  42 => 2,  39 => 1,);
+        return array (  728 => 520,  715 => 509,  700 => 498,  698 => 497,  695 => 496,  680 => 485,  678 => 484,  675 => 483,  651 => 461,  649 => 460,  646 => 459,  622 => 437,  620 => 436,  617 => 435,  593 => 413,  591 => 412,  588 => 411,  564 => 389,  562 => 388,  559 => 387,  535 => 365,  533 => 364,  530 => 363,  506 => 341,  504 => 340,  501 => 339,  486 => 328,  484 => 327,  481 => 326,  466 => 315,  464 => 314,  461 => 313,  437 => 291,  435 => 290,  432 => 289,  408 => 267,  406 => 266,  403 => 265,  393 => 257,  390 => 256,  380 => 248,  378 => 247,  375 => 246,  365 => 238,  362 => 237,  352 => 229,  350 => 228,  347 => 227,  341 => 223,  330 => 221,  326 => 220,  319 => 215,  317 => 214,  314 => 213,  304 => 205,  302 => 204,  299 => 203,  286 => 192,  284 => 191,  281 => 190,  271 => 182,  269 => 181,  266 => 180,  240 => 156,  238 => 155,  235 => 154,  220 => 143,  218 => 142,  204 => 130,  174 => 104,  172 => 103,  169 => 102,  140 => 77,  138 => 76,  124 => 65,  121 => 64,  76 => 23,  74 => 22,  67 => 17,  60 => 14,  55 => 13,  52 => 12,  39 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% flash %}
-    <div class=\"alert alert-{{ type }}\">
-        {{ message }}
-    </div>
-{% endflash %}
-
+        return new Source("
 <p>Fields marked <span style=\"color: red;\">*</span> are required</p>
 
     <form
@@ -754,7 +756,14 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     data-request-flash
     data-request-success=\"document.getElementById('regForm').reset();\"
     class=\"\"
-    id=\"form\">
+    id=\"regForm\">
+    
+    {% flash %}
+        <div class=\"alert alert-{{ type }}\">
+            {{ message }}
+        </div>
+    {% endflash %}
+
 
     
 <div class=\"form-row\">
@@ -1249,10 +1258,13 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
 
 </div>
 
+<div class=\"text-center pt-100 pb-20\">
+    <button data-attach-loading type=\"submit\" class=\"btn btn-lg btn-danger text-white register-btn btn-h7\" style=\"padding: 10px border-radius: 4px; background-image: none;\">Register</button>
+</div>
 
-    <div class=\"text-center pt-100 pb-20\">
-        <button data-attach-loading type=\"submit\" class=\"btn btn-lg btn-danger text-white register-btn btn-h7\" style=\"padding: 10px border-radius: 4px; background-image: none;\">Register</button>
-    </div>
+<div class=\"text-center pt-20 pb-50\">
+    <p class=\"text-muted\">Register your kids <a class=\"theme-color-text\" href=\"#\">here</a></p>
+</div>
 
 {{ form_close() }}
 ", "C:\\laragon\\www\\fa21/plugins/umaha/events/components/registration/default.htm", "");
@@ -1260,9 +1272,9 @@ class __TwigTemplate_63dc960bb59bdf04585a443d9963fea0f2c2d894067e195290276c95c1a
     
     public function checkSecurity()
     {
-        static $tags = array("flash" => 1, "if" => 20, "for" => 218);
-        static $filters = array("escape" => 2);
-        static $functions = array("form_close" => 515);
+        static $tags = array("flash" => 12, "if" => 22, "for" => 220);
+        static $filters = array("escape" => 13);
+        static $functions = array("form_close" => 520);
 
         try {
             $this->sandbox->checkSecurity(

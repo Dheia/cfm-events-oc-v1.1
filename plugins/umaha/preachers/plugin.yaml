@@ -1,0 +1,17 @@
+plugin:
+    name: 'umaha.preachers::lang.plugin.name'
+    description: 'umaha.preachers::lang.plugin.description'
+    author: Umaha
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Preachers
+        url: umaha/preachers/preachers
+        icon: icon-life-ring
+        permissions:
+            - manage_preachers
+permissions:
+    manage_preachers:
+        tab: Preachers
+        label: 'manage preachers'
